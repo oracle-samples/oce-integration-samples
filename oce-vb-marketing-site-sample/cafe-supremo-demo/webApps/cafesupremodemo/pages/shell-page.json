@@ -1,0 +1,248 @@
+{
+ "pageModelVersion": "19.1.5",
+ "description": "",
+ "routerFlow": "home",
+ "variables": {
+		"navDataSource": {
+			"type": "vb/ArrayDataProvider",
+			"description": "The model describing the flows in the app",
+			"defaultValue": {
+				"idAttribute": "id",
+				"data": [
+					{
+						"name": "Home",
+						"id": "home",
+						"iconClass": "oj-fwk-icon oj-fwk-icon-list oj-navigationlist-item-icon"
+					},
+					{
+						"name": "Menu",
+						"id": "menu",
+						"iconClass": "oj-fwk-icon oj-fwk-icon-list oj-navigationlist-item-icon"
+					},
+					{
+						"name": "Blog",
+						"id": "blog",
+						"iconClass": "oj-fwk-icon oj-fwk-icon-list oj-navigationlist-item-icon"
+					}
+				]
+			}
+		},
+		"messagesADP": {
+			"type": "vb/ArrayDataProvider",
+			"defaultValue": {
+				"idAttribute": "id",
+				"itemType": "page:messageType"
+			}
+		}
+	},
+ "metadata": {},
+ "types": {
+		"messageType": {
+			"id": "string",
+			"severity": "string",
+			"category": "string",
+			"summary": "string",
+			"detail": "string",
+			"timestamp": "string",
+			"autoTimeout": "number"
+		}
+	},
+ "chains": {
+  "showNotification": {
+			"variables": {
+				"eventPayload": {
+					"type": "messageType",
+					"input": "fromCaller"
+				}
+			},
+			"root": "displayMessage",
+			"actions": {
+				"displayMessage": {
+					"module": "vb/action/builtin/fireDataProviderEventAction",
+					"parameters": {
+						"target": "{{ $page.variables.messagesADP }}",
+						"add": {
+							"data": "{{ [ $chain.variables.eventPayload ] }}"
+						}
+					}
+				}
+			}
+		},
+  "navigationHandler": {
+			"variables": {
+				"item": {
+					"required": true,
+					"type": "string",
+					"input": "fromCaller"
+				},
+				"updatedFrom": {
+					"type": "string",
+					"input": "fromCaller"
+				}
+			},
+			"root": "test",
+			"actions": {
+				"test": {
+					"module": "vb/action/builtin/ifAction",
+					"parameters": {
+						"condition": "{{ $variables.updatedFrom !== 'external' }}"
+					},
+					"outcomes": {
+						"true": "switch1"
+					}
+				},
+				"switch1": {
+					"module": "vb/action/builtin/switchAction",
+					"outcomes": {
+						"home": "navigateToPage0",
+						"menu": "navigateToPage1",
+						"blog": "navigateToPage2"
+					},
+					"parameters": {
+						"caseValue": "{{ $chain.variables.item }}"
+					}
+				},
+				"navigateToPage0": {
+					"module": "vb/action/builtin/navigateToPageAction",
+					"parameters": {
+						"page": "shell/home"
+					}
+				},
+				"navigateToPage1": {
+					"module": "vb/action/builtin/navigateToPageAction",
+					"parameters": {
+						"page": "shell/menu"
+					}
+				},
+				"navigateToPage2": {
+					"module": "vb/action/builtin/navigateToPageAction",
+					"parameters": {
+						"page": "shell/blog"
+					}
+				}
+			}
+		},
+  "closeNotificationHandler": {
+			"variables": {
+				"eventMessage": {
+					"type": "messageType",
+					"input": "fromCaller"
+				}
+			},
+			"root": "removeMessage",
+			"actions": {
+				"removeMessage": {
+					"module": "vb/action/builtin/fireDataProviderEventAction",
+					"parameters": {
+						"target": "{{ $page.variables.messagesADP }}",
+						"remove": {
+							"keys": "{{ [ $variables.eventMessage.id ] }}"
+						}
+					}
+				}
+			}
+		},
+        "ContentSearchSearchContentChain": {
+            "description": "",
+            "variables": {
+                "detail": {
+                    "required": true,
+                    "type": "any",
+                    "input": "fromCaller"
+                }
+            },
+            "root": "navigateToPage1",
+            "actions": {
+                "navigateToPage1": {
+                    "module": "vb/action/builtin/navigateToPageAction",
+                    "parameters": {
+                        "page": "shell/search"
+                    }
+                }
+            }
+        }
+ },
+ "eventListeners": {
+  "application:navigateToItem": {
+			"chains": [
+				{
+					"chainId": "navigationHandler",
+					"parameters": {
+						"item": "{{ $event.item }}"
+					}
+				}
+			]
+		},
+  "vbNotification": {
+			"chains": [
+				{
+					"chainId": "showNotification",
+					"parameters": {
+						"eventPayload": "{{ { id: $event.key, summary: $event.summary, detail: $event.message, severity: $event.type, autoTimeout: $event.displayMode === 'transient' ? 0 : -1, timestamp: oj.IntlConverterUtils.dateToLocalIso(new Date()) } }}"
+					}
+				}
+			]
+		},
+  "onNavigation": {
+			"chains": [
+				{
+					"chainId": "navigationHandler",
+					"parameters": {
+						"item": "{{ $event.detail.value }}",
+						"updatedFrom": "{{ $event.detail.updatedFrom }}"
+					}
+				}
+			]
+		},
+  "onMessageClose": {
+			"chains": [
+				{
+					"chainId": "closeNotificationHandler",
+					"parameters": {
+						"eventMessage": "{{ $event.detail.message }}"
+					}
+				}
+			]
+		},
+  "oceContentSearch8228230881SearchContent": {
+      "chains": [
+          {
+              "chainId": "ContentSearchSearchContentChain",
+              "parameters": {
+                  "detail": "{{ $event.detail }}"
+              }
+          }
+      ]
+  }
+ },
+ "imports": {
+  "components": {
+   "oj-messages": {
+				"path": "ojs/ojmessages"
+			},
+   "oj-toolbar": {
+				"path": "ojs/ojtoolbar"
+			},
+   "oj-navigation-list": {
+				"path": "ojs/ojnavigationlist"
+			},
+   "oj-button": {
+				"path": "ojs/ojbutton"
+			},
+   "oj-conveyor-belt": {
+				"path": "ojs/ojconveyorbelt"
+			},
+    "oj-oce-search": {
+        "path": "oj-oce/search/loader"
+    },
+    "oj-oce-image": {
+        "path": "oj-oce/image/loader"
+    }
+  }
+ },
+ "translations": {
+		"shell": {
+			"path": "./resources/strings/shell/nls/shell-strings"
+		}
+	}
+}

@@ -1,0 +1,60 @@
+{
+  "pageModelVersion": "19.3.1",
+  "title": "",
+  "description": "",
+  "variables": {},
+  "metadata": {},
+  "types": {},
+  "chains": {
+    "ContentListItemSelectedChain": {
+      "description": "",
+      "variables": {
+        "eventItemData": {
+          "required": true,
+          "type": "object",
+          "input": "fromCaller"
+        }
+      },
+      "root": "assignVariables1",
+      "actions": {
+        "assignVariables1": {
+          "module": "vb/action/builtin/assignVariablesAction",
+          "parameters": {
+            "$application.variables.contentItemData2": {
+              "source": "{{ $chain.variables.eventItemData }}",
+              "auto": "always"
+            }
+          },
+          "outcomes": {
+            "success": "navigateToPage1"
+          }
+        },
+        "navigateToPage1": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "search-detail"
+          }
+        }
+      }
+    }
+  },
+  "eventListeners": {
+    "oceContentList3236569031ItemSelected": {
+      "chains": [
+        {
+          "chainId": "ContentListItemSelectedChain",
+          "parameters": {
+            "eventItemData": "{{$event.detail}}"
+          }
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-oce-list": {
+        "path": "oj-oce/list/loader"
+      }
+    }
+  }
+}

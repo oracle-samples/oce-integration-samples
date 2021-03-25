@@ -1,0 +1,18 @@
+{
+    "paths": {
+        "exclude": [
+            "build/**",
+            "docs/**",
+            "scripts/**",
+            "tests/**",
+            "**/private",
+            "+(web|mobile)Apps/**/resources/components/**/lib/*"
+        ]
+    },
+    "rules": {
+        "csslint#overqualified-elements": {
+            "disabled": true
+        }
+      },
+    "auditors": {}
+}

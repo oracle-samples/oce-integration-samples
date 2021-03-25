@@ -1,0 +1,10 @@
+{
+    "flowModelVersion": "19.3.1",
+    "id": "search",
+    "description": "Flow main",
+    "defaultPage": "search-start",
+    "chains": {},
+    "services": {},
+    "types": {},
+    "variables": {}
+}

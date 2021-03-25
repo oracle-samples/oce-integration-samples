@@ -1,0 +1,10 @@
+{
+    "flowModelVersion": "19.3.1",
+    "id": "blog",
+    "description": "Flow main",
+    "defaultPage": "blog-start",
+    "chains": {},
+    "services": {},
+    "types": {},
+    "variables": {}
+}

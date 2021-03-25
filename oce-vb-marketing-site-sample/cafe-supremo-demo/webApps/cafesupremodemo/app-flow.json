@@ -1,0 +1,82 @@
+{
+ "applicationModelVersion": "19.3.1",
+ "id": "cafesupremonav",
+ "description": "A new VB app",
+ "defaultPage": "shell",
+ "chains": {},
+ "services": {},
+ "translations": {
+		"app": {
+			"path": "./resources/strings/app/nls/app-strings"
+		}
+	},
+ "events": {
+		"navigateToItem": {
+			"payloadType": {
+				"item": "string"
+			}
+		}
+	},
+ "types": {},
+ "variables": {
+        "@decorators.vbcsServiceId": {
+            "autowire": {
+                "contextKey": "oj-oce-shared",
+                "name": "vbcsServiceId"
+            }
+        },
+  "searchObservable": {
+			"type": "string",
+			"defaultValue": "",
+			"persisted": "session"
+		},
+  "contentServer": {
+   "type": "string",
+   "defaultValue": "https://samples.mycontentdemo.com",
+   "persisted": "session"
+  },
+  "@decorators.contentServer": {
+			"autowire": {
+				"contextKey": "oj-oce-shared",
+				"name": "contentServer"
+			}
+		},
+  "channelToken": {
+   "type": "string",
+   "defaultValue": "07fedd8991c051dc94fa989f8e79fe85",
+   "persisted": "session",
+            "description": ""
+  },
+  "@decorators.channelToken": {
+			"autowire": {
+				"contextKey": "oj-oce-shared",
+				"name": "channelToken"
+			}
+		},
+        "contentItemData": {
+            "type": "object",
+            "persisted": "session"
+        },
+        "contentItemData2": {
+            "type": "object",
+            "persisted": "session"
+        },
+        "contentItemData3": {
+            "type": "object",
+            "persisted": "session"
+        }
+ },
+ "userConfig": {
+		"type": "vb/DefaultSecurityProvider",
+		"configuration": {},
+		"embedding": "deny"
+	},
+ "security": {},
+ "requirejs": {
+  "paths": {
+   "oj-oce": "build/components/oj-oce/2.0.2",
+   "mustache": "https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache",
+   "marked": "https://cdnjs.cloudflare.com/ajax/libs/marked/0.7.0/marked"
+  }
+ }
+}

@@ -1,0 +1,131 @@
+{
+  "pageModelVersion": "19.3.1",
+  "title": "",
+  "description": "",
+  "variables": {},
+  "metadata": {},
+  "types": {},
+  "chains": {
+    "ContentListItemSelectedChain4": {
+      "description": "",
+      "variables": {
+        "eventItemData": {
+          "required": true,
+          "type": "object",
+          "input": "fromCaller"
+        }
+      },
+      "root": "assignVariables1",
+      "actions": {
+        "assignVariables1": {
+          "module": "vb/action/builtin/assignVariablesAction",
+          "parameters": {
+            "$application.variables.contentItemData3": {
+              "source": "{{ $chain.variables.eventItemData }}",
+              "auto": "always"
+            }
+          },
+          "outcomes": {
+            "success": "navigateToPage1"
+          }
+        },
+        "navigateToPage1": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "promo-details"
+          }
+        }
+      }
+    },
+    "ContentListItemSelectedChain5": {
+      "description": "",
+      "variables": {
+        "eventItemData": {
+          "required": true,
+          "type": "object",
+          "input": "fromCaller"
+        }
+      },
+      "root": "openUrl1",
+      "actions": {
+        "openUrl1": {
+          "module": "vb/action/builtin/openUrlAction",
+          "parameters": {
+            "url": "https://ccstore-z5ga.oracleoutsourcing.com/oracle-mug/product/Mug123",
+            "windowName": "_blank"
+          }
+        }
+      }
+    },
+    "ContentListItemSelectedChain6": {
+      "description": "",
+      "variables": {
+        "eventItemData": {
+          "required": true,
+          "type": "object",
+          "input": "fromCaller"
+        }
+      },
+      "root": "assignVariables1",
+      "actions": {
+        "navigateToPage1": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "blog-details"
+          }
+        },
+        "assignVariables1": {
+          "module": "vb/action/builtin/assignVariablesAction",
+          "parameters": {
+            "$application.variables.contentItemData2": {
+              "source": "{{ $chain.variables.eventItemData }}",
+              "auto": "always"
+            }
+          },
+          "outcomes": {
+            "success": "navigateToPage1"
+          }
+        }
+      }
+    }
+  },
+  "eventListeners": {
+    "oceContentList3831188091ItemSelected": {
+      "chains": [
+        {
+          "chainId": "ContentListItemSelectedChain4",
+          "parameters": {
+            "eventItemData": "{{$event.detail}}"
+          }
+        }
+      ]
+    },
+    "oceContentList8228230881ItemSelected": {
+      "chains": [
+        {
+          "chainId": "ContentListItemSelectedChain5",
+          "parameters": {
+            "eventItemData": "{{$event.detail}}"
+          }
+        }
+      ]
+    },
+    "oceContentList8228230883ItemSelected": {
+      "chains": [
+        {
+          "chainId": "ContentListItemSelectedChain6",
+          "parameters": {
+            "eventItemData": "{{$event.detail}}"
+          }
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-oce-list": {
+        "path": "oj-oce/list/loader"
+      }
+    }
+  }
+}

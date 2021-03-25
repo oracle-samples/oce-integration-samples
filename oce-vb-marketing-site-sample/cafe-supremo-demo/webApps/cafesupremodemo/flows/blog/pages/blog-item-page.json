@@ -1,0 +1,17 @@
+{
+  "pageModelVersion": "19.4.3",
+  "title": "",
+  "description": "",
+  "variables": {},
+  "metadata": {},
+  "types": {},
+  "chains": {},
+  "eventListeners": {},
+  "imports": {
+    "components": {
+      "oj-oce-item": {
+        "path": "oj-oce/item/loader"
+      }
+    }
+  }
+}

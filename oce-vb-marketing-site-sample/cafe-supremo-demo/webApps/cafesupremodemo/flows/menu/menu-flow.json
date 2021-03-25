@@ -1,0 +1,10 @@
+{
+    "flowModelVersion": "19.3.1",
+    "id": "menu",
+    "description": "Flow main",
+    "defaultPage": "menu-start",
+    "chains": {},
+    "services": {},
+    "types": {},
+    "variables": {}
+}

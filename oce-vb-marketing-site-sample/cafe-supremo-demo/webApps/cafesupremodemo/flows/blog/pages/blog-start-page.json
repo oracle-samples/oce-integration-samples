@@ -1,0 +1,154 @@
+{
+ "pageModelVersion": "19.3.1",
+ "title": "",
+ "description": "",
+ "variables": {
+        "ojTabBar5249694651SelectedItem": {
+            "type": "string",
+            "defaultValue": "oj-tab-bar-524969465-1-tab-1"
+        }
+      },
+ "metadata": {},
+ "types": {},
+ "chains": {
+        "ContentListItemSelectedChain": {
+            "description": "",
+            "variables": {
+                "eventItemData": {
+                    "required": true,
+                    "type": "object",
+                    "input": "fromCaller"
+                }
+            },
+            "root": "assignVariables1",
+            "actions": {
+                "assignVariables1": {
+                    "module": "vb/action/builtin/assignVariablesAction",
+                    "parameters": {
+                        "$application.variables.contentItemData": {
+                            "source": "{{ $chain.variables.eventItemData }}",
+                            "auto": "always"
+                        }
+                    },
+                    "outcomes": {
+                        "success": "navigateToPage1"
+                    }
+                },
+                "navigateToPage1": {
+                    "module": "vb/action/builtin/navigateToPageAction",
+                    "parameters": {
+                        "page": "blog-detail"
+                    }
+                }
+            }
+        },
+        "ContentListItemSelectedChain1": {
+            "description": "",
+            "variables": {
+                "eventItemData": {
+                    "required": true,
+                    "type": "object",
+                    "input": "fromCaller"
+                }
+            },
+            "root": "assignVariables1",
+            "actions": {
+                "assignVariables1": {
+                    "module": "vb/action/builtin/assignVariablesAction",
+                    "parameters": {
+                        "$application.variables.contentItemData": {
+                            "source": "{{ $chain.variables.eventItemData }}",
+                            "auto": "always"
+                        }
+                    },
+                    "outcomes": {
+                        "success": "navigateToPage1"
+                    }
+                },
+                "navigateToPage1": {
+                    "module": "vb/action/builtin/navigateToPageAction",
+                    "parameters": {
+                        "page": "blog-detail"
+                    }
+                }
+            }
+        },
+        "ContentListItemSelectedChain2": {
+            "description": "",
+            "variables": {
+                "eventItemData": {
+                    "required": true,
+                    "type": "object",
+                    "input": "fromCaller"
+                }
+            },
+            "root": "assignVariables1",
+            "actions": {
+                "assignVariables1": {
+                    "module": "vb/action/builtin/assignVariablesAction",
+                    "parameters": {
+                        "$application.variables.contentItemData": {
+                            "source": "{{ $chain.variables.eventItemData }}",
+                            "auto": "always"
+                        }
+                    },
+                    "outcomes": {
+                        "success": "navigateToPage1"
+                    }
+                },
+                "navigateToPage1": {
+                    "module": "vb/action/builtin/navigateToPageAction",
+                    "parameters": {
+                        "page": "blog-detail"
+                    }
+                }
+            }
+        }
+      },
+ "eventListeners": {
+        "oceContentList5249694651ItemSelected": {
+            "chains": [
+                {
+                    "chainId": "ContentListItemSelectedChain",
+                    "parameters": {
+                        "eventItemData": "{{$event.detail}}"
+                    }
+                }
+            ]
+        },
+        "oceContentList5249694652ItemSelected": {
+            "chains": [
+                {
+                    "chainId": "ContentListItemSelectedChain1",
+                    "parameters": {
+                        "eventItemData": "{{$event.detail}}"
+                    }
+                }
+            ]
+        },
+        "oceContentList5249694654ItemSelected": {
+            "chains": [
+                {
+                    "chainId": "ContentListItemSelectedChain2",
+                    "parameters": {
+                        "eventItemData": "{{$event.detail}}"
+                    }
+                }
+            ]
+        }
+
+      },
+ "imports": {
+  "components": {
+   "oj-tab-bar": {
+				"path": "ojs/ojnavigationlist"
+			},
+   "oj-switcher": {
+				"path": "ojs/ojswitcher"
+			},
+    "oj-oce-list": {
+        "path": "oj-oce/list/loader"
+    }
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+  "component-dependencies": {
+    "oj-oce": {
+      "version": "2.0.2",
+      "components": {
+        "gallery": "2.0.2",
+        "image": "2.0.2",
+        "item": "2.0.2",
+        "list": "2.0.2",
+        "placeholder": "2.0.2",
+        "search": "2.0.2"
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+<div style="margin: 2rem; width: 100%"> 
+<div class="oj-flex" style="text-align:center">
+  <oj-tab-bar id="oj-tab-bar-524969465-1" selection="{{$page.variables.ojTabBar5249694651SelectedItem}}" class="oj-flex-item oj-sm-12 oj-md-12" edge="top">
+    <ul>
+      <li id="oj-tab-bar-524969465-1-tab-1">
+        <a href="#" id="oj-tab-bar-524969465-1-tab-1-tab" aria-controls="oj-tab-bar-524969465-1-tab-1-panel"><oj-bind-text value="[[ $application.translations.app.blog_section_howto ]]"></oj-bind-text></a>
+      </li>
+      <li id="oj-tab-bar-524969465-1-tab-2">
+        <a href="#" id="oj-tab-bar-524969465-1-tab-2-tab" aria-controls="oj-tab-bar-524969465-1-tab-2-panel"><oj-bind-text value="[[ $application.translations.app.blog_section_drinks ]]"></oj-bind-text></a>
+      </li>
+      <li id="oj-tab-bar-524969465-1-tab-3">
+        <a href="#" id="oj-tab-bar-524969465-1-tab-3-tab" aria-controls="oj-tab-bar-524969465-1-tab-3-panel"><oj-bind-text value="[[ $application.translations.app.blog_section_people ]]"></oj-bind-text></a>
+      </li>
+      <li id="oj-tab-bar-524969465-1-tab-4">
+        <a href="#" id="oj-tab-bar-524969465-1-tab-4-tab" aria-controls="oj-tab-bar-524969465-1-tab-4-panel"><oj-bind-text value="[[ $application.translations.app.blog_section_recipes ]]"></oj-bind-text></a>
+      </li>
+    </ul>
+  </oj-tab-bar>
+</div>
+<div class="oj-flex">
+  <oj-switcher value="[[$page.variables.ojTabBar5249694651SelectedItem]]" id="oj-switcher-524969465-1" class="oj-flex-item oj-sm-12 oj-md-12">
+    <div slot="oj-tab-bar-524969465-1-tab-1" id="oj-tab-bar-524969465-1-tab-1-panel" aria-labelledby="oj-tab-bar-524969465-1-tab-1-tab" role="tabpanel">
+      <div class="disableAnchor">
+        <oj-oce-list content-server="[[$application.variables.contentServer]]" channel-token="[[$application.variables.channelToken]]" id="oj-oce-list-524969465-1" class="oj-flex-item oj-sm-12 oj-md-12" content-type="Blog" layout="Blog-Default" list-view="threeColumns" query='fields.blog_category eq "HOW TO"' on-item-selected="[[$listeners.oceContentList5249694651ItemSelected]]"></oj-oce-list>
+      </div>
+    </div>
+    <div slot="oj-tab-bar-524969465-1-tab-2" id="oj-tab-bar-524969465-1-tab-2-panel" aria-labelledby="oj-tab-bar-524969465-1-tab-2-tab" role="tabpanel">
+      <div class="disableAnchor">
+        <oj-oce-list content-server="[[$application.variables.contentServer]]" channel-token="[[$application.variables.channelToken]]" id="oj-oce-list-524969465-2" class="oj-flex-item oj-sm-12 oj-md-12" content-type="Blog" layout="Blog-Default" list-view="threeColumns" query='fields.blog_category eq "DRINKS"' on-item-selected="[[$listeners.oceContentList5249694652ItemSelected]]"></oj-oce-list>
+      </div>
+    </div>
+    <div slot="oj-tab-bar-524969465-1-tab-3" id="oj-tab-bar-524969465-1-tab-3-panel" aria-labelledby="oj-tab-bar-524969465-1-tab-3-tab" role="tabpanel">
+      <div class="disableAnchor">
+        <oj-oce-list content-server="[[$application.variables.contentServer]]" channel-token="[[$application.variables.channelToken]]" id="oj-oce-list-524969465-3" class="oj-flex-item oj-sm-12 oj-md-12" content-type="Blog" layout="Blog-Default" list-view="threeColumns" query='fields.blog_category eq "People"' on-item-selected="[[$listeners.oceContentList5249694651ItemSelected]]"></oj-oce-list>
+      </div>
+    </div>
+    <div id="oj-tab-bar-524969465-1-tab-4-panel" slot="oj-tab-bar-524969465-1-tab-4" aria-labelledby="oj-tab-bar-524969465-1-tab-4-tab" role="tabpanel">
+      <div class="disableAnchor">
+        <oj-oce-list content-server="[[$application.variables.contentServer]]" channel-token="[[$application.variables.channelToken]]" id="oj-oce-list-524969465-4" class="oj-flex-item oj-sm-12 oj-md-12" content-type="Blog" layout="Blog-Default" list-view="threeColumns" query='fields.blog_category eq "Recipes"' on-item-selected="[[$listeners.oceContentList5249694654ItemSelected]]"></oj-oce-list>
+      </div>
+    </div>
+  </oj-switcher>
+</div>
+</div>

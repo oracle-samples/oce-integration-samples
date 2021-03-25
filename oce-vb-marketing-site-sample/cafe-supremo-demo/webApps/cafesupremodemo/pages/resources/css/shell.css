@@ -1,0 +1,35 @@
+/* Override JET style to always show a vertical scrollbar. Vertical scrollbar will be shown on demand by the browser  */
+.oj-web-applayout-body {
+    overflow-y: initial;
+}
+
+/* Sticky header on the top so that the rest of the page can scroll independent of the header */
+.oj-web-applayout-page.fixed-header {
+    /* Add an extra padding at the top to account for sticky header */
+    padding-top: 134px;
+}
+
+@media screen and (max-width: 567px) {
+    /* On small screens the navigation tab list is hidden so decrease the padding */
+    .oj-web-applayout-page.fixed-header {
+        padding-top: 74px;
+    }
+}
+.oj-web-applayout-page.fixed-header .oj-web-applayout-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+/* Sticky footer at the bottom so that the rest of the page can scroll independent of the footer */
+.oj-web-applayout-page.fixed-footer {
+    padding-bottom: 52px;
+}
+
+.oj-web-applayout-page.fixed-footer .oj-web-applayout-footer {
+    /* Add an extra padding at the bottom to account for the sticky footer */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

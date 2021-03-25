@@ -1,0 +1,48 @@
+
+<div style="margin:2rem 2rem"> 
+<div class="oj-flex" data-vb-layout-type="grid" style="display:none">
+</div>
+<div>
+  <div class="oj-flex">
+    <oj-tab-bar edge="top" id="oj-tab-bar--72049191-1" selection="{{$page.variables.ojTabBar720491911SelectedItem}}" class="oj-flex-item oj-sm-12 oj-md-4 menu-tab-bar">
+      <ul>
+        <li id="oj-tab-bar--72049191-1-tab-1">
+          <a href="#" id="oj-tab-bar--72049191-1-tab-1-tab" aria-controls="oj-tab-bar--72049191-1-tab-1-panel"><oj-bind-text value="[[ $application.translations.app.menu_section_coffee ]]"></oj-bind-text></a>
+        </li>
+        <li id="oj-tab-bar--72049191-1-tab-2">
+          <a href="#" id="oj-tab-bar--72049191-1-tab-2-tab" aria-controls="oj-tab-bar--72049191-1-tab-2-panel"><oj-bind-text value="[[ $application.translations.app.menu_section_tea ]]"></oj-bind-text></a>
+        </li>
+        <li id="oj-tab-bar--72049191-1-tab-3">
+          <a href="#" id="oj-tab-bar--72049191-1-tab-3-tab" aria-controls="oj-tab-bar--72049191-1-tab-3-panel"><oj-bind-text value="[[ $application.translations.app.menu_section_treats ]]"></oj-bind-text></a>
+        </li>
+      </ul>
+    </oj-tab-bar>
+  </div>
+  <div class="oj-flex">
+    <oj-switcher value="[[$page.variables.ojTabBar720491911SelectedItem]]" id="oj-switcher--72049191-1" class="oj-flex-item oj-sm-12 oj-md-12">
+      <div slot="oj-tab-bar--72049191-1-tab-1" id="oj-tab-bar--72049191-1-tab-1-panel" aria-labelledby="oj-tab-bar--72049191-1-tab-1-tab" role="tabpanel">
+        <div class="oj-flex" style="margin: 0 auto; width:90%">
+          <oj-oce-list content-server="[[$application.variables.contentServer]]" channel-token="[[$application.variables.channelToken]]" id="oj-oce-list--72049191-1" class="oj-flex-item oj-sm-12 oj-md-12" content-type="MenuItem" layout="MenuItem-Default" query='fields.menuitem_category eq "COFFEE"' on-item-selected="[[$listeners.oceContentList720491911ItemSelected]]" order-by="dateDescending"></oj-oce-list>
+        </div>
+
+      </div>
+      <div slot="oj-tab-bar--72049191-1-tab-2" id="oj-tab-bar--72049191-1-tab-2-panel" aria-labelledby="oj-tab-bar--72049191-1-tab-2-tab" role="tabpanel">
+        <div class="oj-flex" style="margin: 0 auto; width:90%">
+          <oj-oce-list content-server="[[$application.variables.contentServer]]" channel-token="[[$application.variables.channelToken]]" id="oj-oce-list--72049191-2" class="oj-flex-item oj-sm-12 oj-md-12" content-type="MenuItem" layout="MenuItem-Default" query='fields.menuitem_category eq "TEA"'></oj-oce-list>
+        </div>
+
+      </div>
+      <div slot="oj-tab-bar--72049191-1-tab-3" id="oj-tab-bar--72049191-1-tab-3-panel" aria-labelledby="oj-tab-bar--72049191-1-tab-3-tab" role="tabpanel">
+        <div class="oj-flex" style="margin: 0 auto; width:90%">
+          <oj-oce-list content-server="[[$application.variables.contentServer]]" channel-token="[[$application.variables.channelToken]]" id="oj-oce-list--72049191-3" class="oj-flex-item oj-sm-12 oj-md-12" content-type="MenuItem" layout="MenuItem-Default" query='fields.menuitem_category eq "TREATS"'></oj-oce-list>
+        </div>
+
+      </div>
+    </oj-switcher>
+  </div>
+</div> 
+</div>
+<div class="oj-flex" style="border: 1px solid grey;margin:2rem auto 0 auto">
+  <div style="margin:1rem auto 1rem auto"><oj-bind-text value="[[ $application.translations.app.menu_combos_title ]]"></oj-bind-text></div>
+  <oj-oce-list content-server="[[$application.variables.contentServer]]" channel-token="[[$application.variables.channelToken]]" id="oj-oce-list--72049191-4" class="oj-flex-item oj-sm-12 oj-md-12" content-type="MenuCombo" layout="MenuCombo-Default" debug="true" list-view="horizontal" max-items="4" order-by="nameAscending"></oj-oce-list>
+</div>

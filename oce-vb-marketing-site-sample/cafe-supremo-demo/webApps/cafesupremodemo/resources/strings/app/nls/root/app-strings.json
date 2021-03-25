@@ -1,0 +1,34 @@
+{
+    "menu_combos_title": "Cafe Supremo Combos",
+    "@menu_combos_title": {
+        "description": "Title of Menus Combos Section"
+    },
+    "menu_section_coffee": "COFFEE",
+    "@menu_section_coffee": {
+        "description": "Menu section title for coffee"
+    },
+    "menu_section_tea": "TEA",
+    "@menu_section_tea": {
+        "description": "Menu section title for tea"
+    },
+    "menu_section_treats": "TREATS",
+    "@menu_section_treats": {
+        "description": "Menu section title for treats"
+    },
+    "blog_section_howto": "HOW TO",
+    "@blog_section_howto": {
+        "description": "Blog section title for how to articles"
+    },
+    "blog_section_drinks": "DRINKS",
+    "@blog_section_drinks": {
+        "description": "Blog section title for drink articles"
+    },
+    "blog_section_people": "PEOPLE",
+    "@blog_section_people": {
+        "description": "Blog section title for people articles"
+    },
+    "blog_section_recipes": "RECIPES",
+    "@blog_section_recipes": {
+        "description": "Blog section title for recipe articles"
+    }
+}

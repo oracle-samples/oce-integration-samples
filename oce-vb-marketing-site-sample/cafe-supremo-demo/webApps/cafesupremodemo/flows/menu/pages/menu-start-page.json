@@ -1,0 +1,33 @@
+{
+  "pageModelVersion": "19.3.1",
+  "title": "",
+  "description": "",
+  "variables": {
+    "ojTabBar720491911SelectedItem": {
+      "type": "string",
+      "defaultValue": "oj-tab-bar--72049191-1-tab-1"
+    }
+  },
+  "metadata": {},
+  "types": {},
+  "chains": {
+  },
+  "eventListeners": {
+    "oceContentList720491911ItemSelected": {
+      "chains": []
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-tab-bar": {
+        "path": "ojs/ojnavigationlist"
+      },
+      "oj-switcher": {
+        "path": "ojs/ojswitcher"
+      },
+      "oj-oce-list": {
+        "path": "oj-oce/list/loader"
+      }
+    }
+  }
+}
