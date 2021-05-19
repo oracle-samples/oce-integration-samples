@@ -1,0 +1,289 @@
+{
+  "id": "main",
+  "description": "Flow main",
+  "defaultPage": "main-start",
+  "chains": {},
+  "services": {},
+  "types": {},
+  "variables": {
+    "BreakfastGallery": {
+      "defaultValue": [
+         { "id": "CONT0712A840B3D841888DAA70E1A4ABCD23" },
+        { "id": "CONT281D3EE2B60B43C299260728427783FF" },
+        { "id": "CONT449D9B6258C940B18617C9528E71BD1A" },
+        { "id": "CONT5486AA103B8F4C10A6749598EB82D9F6" },
+        { "id": "CONT551733E2B0EF4EC39F59CBB830FF9D1B" },
+        { "id": "CONT635660A3260449459502AAF718CBEB96" },
+        { "id": "CONT7FBCD9B1A5F64BBEA90FCBD544C0D8BF" },
+        { "id": "CONT81D2D1C031AD458994049171E6DA2ADD" },
+        { "id": "CONT8619E4DE04FF4EA6A2E7C72D56532AB5" },
+        { "id": "CONTB91B2584DAB54099BC3F8CD39141B0CD" },
+        { "id": "CONTBA970C2755BF4AB1840AD8B34FCB852E" },
+        { "id": "CONTE352129B240E41AF85EE0202A4B9E318" }
+      ],
+      "type": [
+        {
+          "id": "string"
+        }
+      ]
+    },
+    "DessertsGallery": {
+      "defaultValue": [
+         { "id": "CONT090EE2A4253A4103BF70FFDF5E6F41A9" },
+        { "id": "CONT0BC99412A5614A159AA9477CC31B4762" },
+        { "id": "CONT0F4551DED85342E4991DB2D45C66A3E1" },
+        { "id": "CONT3DAB44EDAA7747B49158D6D1E716B8A7" },
+        { "id": "CONT52ADB8E3B4CD44EBBB346D67A30C0A98" },
+        { "id": "CONT65941950E06C41AD81587B1495CB9734" },
+        { "id": "CONT6A77EEC20CA04B9B810F2AC518105774" },
+        { "id": "CONT71FEAC2298E64CD0940BEB8B32744608" },
+        { "id": "CONT9256454ABF664A7492665774D510EF5D" },
+        { "id": "CONT9257EE372086450E9F947002DFB50F56" },
+        { "id": "CONTA2794839600F4A8D8A270B604961B8B7" },
+        { "id": "CONTB9D24D85ED5B4CB68C9499BD1626A3C1" },
+        { "id": "CONTCF23125CB91F41308EBD32FF5547786E" },
+        { "id": "CONTF321561C19A4408E844623C00F6E52D3" }
+      ],
+      "type": [
+        {
+          "id": "string"
+        }
+      ]
+    },
+    "DrinksGallery": {
+      "type": [
+        {
+          "id": "string"
+        }
+      ],
+      "defaultValue": [
+        {
+          "id": "CONT36AFA5816622442F80CC7280E27BCE4E"
+        },
+        {
+          "id": "CONT396FE225C1264F53BCFCC07FD7998A9E"
+        },
+        {
+          "id": "CONT48148F7AE1A0459BB1C9C9CE1C40B290"
+        },
+        {
+          "id": "CONT684267F11FD349D581DB1D8EFF663F44"
+        },
+        {
+          "id": "CONT690B06C8494C44DDA1535F8496A87521"
+        },
+        {
+          "id": "CONT6BD73DD54B4E4B3DABB6AF982BC2872C"
+        },
+        {
+          "id": "CONT73DFA4104DC64E709C653BF3C7703CB3"
+        },
+        {
+          "id": "CONT75E6706D3B044D06A5E2A466DDA23E7F"
+        },
+        {
+          "id": "CONT9CE5A3AAD26A4568A8A245072EFE96F9"
+        },
+        {
+          "id": "CONTA13BFDA042C542828E87710CFCD38090"
+        }
+      ]
+    },
+    "FoodGallery": {
+      "type": [
+        {
+          "id": "string"
+        }
+      ],
+      "defaultValue": [
+        { "id": "CONT05A05911D2904F70BC016A27A30B87EC" },
+        { "id": "CONT0712A840B3D841888DAA70E1A4ABCD23" },
+        { "id": "CONT090EE2A4253A4103BF70FFDF5E6F41A9" },
+        { "id": "CONT0BC99412A5614A159AA9477CC31B4762" },
+        { "id": "CONT0F4551DED85342E4991DB2D45C66A3E1" },
+        { "id": "CONT13CE913BBF434CA39AEB046D164129ED" },
+        { "id": "CONT18CEE3D15711463A97C374E4CB8FF7AC" },
+        { "id": "CONT1DBD16C6A02F4F3D9B001E4AF781EA30" },
+        { "id": "CONT281D3EE2B60B43C299260728427783FF" },
+        { "id": "CONT2C5BF73513B24E7A90E543006732E319" },
+        { "id": "CONT36AFA5816622442F80CC7280E27BCE4E" },
+        { "id": "CONT396FE225C1264F53BCFCC07FD7998A9E" },
+        { "id": "CONT3B425466D0204336AB27FEDB83772B87" },
+        { "id": "CONT3DAB44EDAA7747B49158D6D1E716B8A7" },
+        { "id": "CONT449D9B6258C940B18617C9528E71BD1A" },
+        { "id": "CONT48148F7AE1A0459BB1C9C9CE1C40B290" },
+        { "id": "CONT49A6BC130D284FE7A544807B0983CEEE" },
+        { "id": "CONT4A121BDD63974D3DBE8997C4FC009A5B" },
+        { "id": "CONT52ADB8E3B4CD44EBBB346D67A30C0A98" },
+        { "id": "CONT5486AA103B8F4C10A6749598EB82D9F6" },
+        { "id": "CONT551733E2B0EF4EC39F59CBB830FF9D1B" },
+        { "id": "CONT57F9A4110C98404E8BC91943B074798C" },
+        { "id": "CONT635660A3260449459502AAF718CBEB96" },
+        { "id": "CONT65941950E06C41AD81587B1495CB9734" },
+        { "id": "CONT684267F11FD349D581DB1D8EFF663F44" },
+        { "id": "CONT690B06C8494C44DDA1535F8496A87521" },
+        { "id": "CONT6A77EEC20CA04B9B810F2AC518105774" },
+        { "id": "CONT6BD73DD54B4E4B3DABB6AF982BC2872C" },
+        { "id": "CONT71093DDC95244D66A667EADB9F0818DB" },
+        { "id": "CONT71FEAC2298E64CD0940BEB8B32744608" },
+        { "id": "CONT73DFA4104DC64E709C653BF3C7703CB3" },
+        { "id": "CONT75E6706D3B044D06A5E2A466DDA23E7F" },
+        { "id": "CONT795D9920EF574CC48BB079FCA53F9B2F" },
+        { "id": "CONT7DDB10DD872C4EAC86C55EA7E08D4C25" },
+        { "id": "CONT81D2D1C031AD458994049171E6DA2ADD" },
+        { "id": "CONT8619E4DE04FF4EA6A2E7C72D56532AB5" },
+        { "id": "CONT87069878BC784FFCAC4FB36DAC36F775" },
+        { "id": "CONT9256454ABF664A7492665774D510EF5D" },
+        { "id": "CONT9257EE372086450E9F947002DFB50F56" },
+        { "id": "CONT96AAD87863824E0B9A2869AB7C7A475A" },
+        { "id": "CONT97021D6F11B4462ABA829B0372649649" },
+        { "id": "CONT9CE5A3AAD26A4568A8A245072EFE96F9" },
+        { "id": "CONTA13BFDA042C542828E87710CFCD38090" },
+        { "id": "CONTA2794839600F4A8D8A270B604961B8B7" },
+        { "id": "CONTA4616DD8651246949C1D2EF0542A511B" },
+        { "id": "CONTB6D3D88BDC6649B2AABBBD5B566554EF" },
+        { "id": "CONTB91B2584DAB54099BC3F8CD39141B0CD" },
+        { "id": "CONTB9D24D85ED5B4CB68C9499BD1626A3C1" },
+        { "id": "CONTBA6E32A1F23A46BF82EDB2AEF284C020" },
+        { "id": "CONTBA970C2755BF4AB1840AD8B34FCB852E" },
+        { "id": "CONTBE6B56480BF54CA2BE2992716C46B3BA" },
+        { "id": "CONTC850578A36FA43A58825F3077F48D9D1" },
+        { "id": "CONTC915BF5B3C21488E9837378A9F3AD110" },
+        { "id": "CONTCAE03C63259A441789A550D2BFF68847" },
+        { "id": "CONTCB7E6EE0DD114FDB8D01D4EDD6A6DDA9" },
+        { "id": "CONTCF23125CB91F41308EBD32FF5547786E" },
+        { "id": "CONTD0DBB6372B064A91A98306C1DA9C2040" },
+        { "id": "CONTD1780A1094924405A0A0740CC7BA693E" },
+        { "id": "CONTD546182A064B43EA8A70226035C7424A" },
+        { "id": "CONTD5C257498451429F8118C41063E6B934" },
+        { "id": "CONTE680CAB283F840FEA3EE88F42755CFD6" },
+        { "id": "CONTF321561C19A4408E844623C00F6E52D3" },
+        { "id": "CONTF7B2F3009DCD4BCCB4821E538EF5F072" },
+        { "id": "CONTF7CAD2925E1849F2A658FAE1D22D9933" }
+      ]
+    },
+    "SandwichGallery": {
+      "defaultValue": [
+        {
+          "id": "CONT1DBD16C6A02F4F3D9B001E4AF781EA30"
+        },
+        {
+          "id": "CONT2C5BF73513B24E7A90E543006732E319"
+        },
+        {
+          "id": "CONT3B425466D0204336AB27FEDB83772B87"
+        },
+        {
+          "id": "CONT49A6BC130D284FE7A544807B0983CEEE"
+        },
+        {
+          "id": "CONT5486AA103B8F4C10A6749598EB82D9F6"
+        },
+        {
+          "id": "CONT71093DDC95244D66A667EADB9F0818DB"
+        },
+        {
+          "id": "CONT795D9920EF574CC48BB079FCA53F9B2F"
+        },
+        {
+          "id": "CONT79C0233586DF496EB3C841F869AFBB6D"
+        },
+        {
+          "id": "CONT7DDB10DD872C4EAC86C55EA7E08D4C25"
+        },
+        {
+          "id": "CONT87069878BC784FFCAC4FB36DAC36F775"
+        },
+        {
+          "id": "CONT96AAD87863824E0B9A2869AB7C7A475A"
+        },
+        {
+          "id": "CONT97021D6F11B4462ABA829B0372649649"
+        },
+        {
+          "id": "CONTB91B2584DAB54099BC3F8CD39141B0CD"
+        },
+        {
+          "id": "CONT05A05911D2904F70BC016A27A30B87EC"
+        },
+        {
+          "id": "CONTBA6E32A1F23A46BF82EDB2AEF284C020"
+        },
+        {
+          "id": "CONTBE6B56480BF54CA2BE2992716C46B3BA"
+        },
+        {
+          "id": "CONTC915BF5B3C21488E9837378A9F3AD110"
+        },
+        {
+          "id": "CONTCAE03C63259A441789A550D2BFF68847"
+        },
+        {
+          "id": "CONTD1780A1094924405A0A0740CC7BA693E"
+        },
+        {
+          "id": "CONTD5C257498451429F8118C41063E6B934"
+        },
+        {
+          "id": "CONTE352129B240E41AF85EE0202A4B9E318"
+        },
+        {
+          "id": "CONTE680CAB283F840FEA3EE88F42755CFD6"
+        },
+        {
+          "id": "CONTF7B2F3009DCD4BCCB4821E538EF5F072"
+        }
+      ],
+      "type": [
+        {
+          "id": "string"
+        }
+      ]
+    },
+    "bfGallery": {
+      "defaultValue": [
+        {
+          "id": "CONT0712A840B3D841888DAA70E1A4ABCD23"
+        },
+        {
+          "id": "CONT281D3EE2B60B43C299260728427783FF"
+        },
+        {
+          "id": "CONT449D9B6258C940B18617C9528E71BD1A"
+        },
+        {
+          "id": "CONT5486AA103B8F4C10A6749598EB82D9F6"
+        },
+        {
+          "id": "CONT551733E2B0EF4EC39F59CBB830FF9D1B"
+        },
+        {
+          "id": "CONT635660A3260449459502AAF718CBEB96"
+        },
+        {
+          "id": "CONT7FBCD9B1A5F64BBEA90FCBD544C0D8BF"
+        },
+        {
+          "id": "CONT81D2D1C031AD458994049171E6DA2ADD"
+        },
+        {
+          "id": "CONT8619E4DE04FF4EA6A2E7C72D56532AB5"
+        },
+        {
+          "id": "CONTB91B2584DAB54099BC3F8CD39141B0CD"
+        },
+        {
+          "id": "CONTBA970C2755BF4AB1840AD8B34FCB852E"
+        },
+        {
+          "id": "CONTE352129B240E41AF85EE0202A4B9E318"
+        }
+      ],
+      "type": [
+        {
+          "id": "string"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Documents Api 1.2 Files",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://ocereference-oce0004.cec.ocp.oraclecloud.com/documents/api/1.2/files",
+            "description": "Documents Api",
+            "x-vb": {
+                "authentication": {
+                    "authenticated": {
+                        "type": "oauth2_user_assertion",
+                        "scope": "https://26629BEC35A1421D9D14C82B0E4F2936.cec.ocp.oraclecloud.com:443/urn:opc:cec:all"
+                    }
+                }
+            }
+        }
+    ],
+    "paths": {
+        "/data": {
+            "post": {
+                "operationId": "postData",
+                "requestBody": {
+                    "content": {
+                        "multipart/form-data": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostDataRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/postData/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "create"
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "PostDataRequest": {
+                "type": "object",
+                "properties": {
+                    "------WebKitFormBoundaryPS3spvBbFgG42pMM\nContent-Disposition: form-data; name": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,8 +1,9 @@
-# About Oracle Content and Experience Integration Samples
+# About Oracle Content Management Integration Samples
 
-This repository holds a collection of samples that surface content from [Oracle Content and Experience](https://docs.oracle.com/en/cloud/paas/content-cloud/headless-cms.html) (OCE):
+This repository holds a collection of samples that surface content from [Oracle Content Managment](https://docs.oracle.com/en/cloud/paas/content-cloud/headless-cms.html):
 
 - [Visual Builder Marketing Site Sample](./oce-vb-marketing-site-sample/README.md)
+- [Visual Builder Image Gallery Sample](./oce-vb-image-gallery-sample/README.md)
 
 Additional samples are available in their dedicated repositories:
 

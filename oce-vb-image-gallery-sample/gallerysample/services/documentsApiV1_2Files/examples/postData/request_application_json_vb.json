@@ -1,0 +1,7 @@
+------WebKitFormBoundaryPS3spvBbFgG42pMM
+Content-Disposition: form-data; name="jsonInputParameters"
+{"parentID":"self"}
+------WebKitFormBoundaryPS3spvBbFgG42pMM
+Content-Disposition: form-data; name="primaryFile"; filename="TEST.docx"
+Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+------WebKitFormBoundaryPS3spvBbFgG42pMM--

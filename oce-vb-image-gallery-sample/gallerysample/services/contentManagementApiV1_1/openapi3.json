@@ -1,0 +1,99 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Content Management",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://ocereference-oce0004.cec.ocp.oraclecloud.com/content/management/api/v1.1",
+            "description": "Content Management Api V1.1",
+            "x-vb": {
+                "authentication": {
+                    "authenticated": {
+                        "type": "oauth2_user_assertion",
+                        "scope": "https://26629BEC35A1421D9D14C82B0E4F2936.cec.ocp.oraclecloud.com:443/urn:opc:cec:all"
+                    }
+                },
+                "headers": {
+                    "X-Requested-With": "XMLHttpRequest"
+                },
+                "forceProxy": "cors"
+            }
+        }
+    ],
+     "paths": {
+        "/bulkItemsOperations": {
+            "post": {
+                "operationId": "postBulkItemsOperations",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostBulkItemsOperationsRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/postBulkItemsOperations/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "create"
+                }
+            }
+        },
+        "/bulkItemsOperations/{operation}": {
+            "get": {
+                "operationId": "getBulkItemsOperationsOperation",
+                "parameters": [
+                    {
+                        "name": "operation",
+                        "in": "path",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getOne"
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "PostBulkItemsOperationsRequest": {
+                "type": "object",
+                "properties": {
+                    "operations": {
+                        "type": "object",
+                        "properties": {
+                            "addToRepository": {
+                                "type": "object",
+                                "properties": {
+                                    "storageProvider": {
+                                        "type": "string"
+                                    },
+                                    "repositoryId": {
+                                        "type": "string"
+                                    },
+                                    "externalIds": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

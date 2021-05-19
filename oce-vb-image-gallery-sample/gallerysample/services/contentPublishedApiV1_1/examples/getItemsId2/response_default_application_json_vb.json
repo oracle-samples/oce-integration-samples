@@ -1,0 +1,108 @@
+{
+    "id": "CORE9197A4DF34C341ED871960B44C25994D",
+    "type": "Blog",
+    "name": "Making Sense Of It All",
+    "description": "5 Easy Steps Towards Understanding Our Menu",
+    "slug": "vbcs-cafe-supre-cafesupremo-1481786096859-making-sense-of-it-all",
+    "language": "en-US",
+    "translatable": true,
+    "createdDate": {
+        "value": "2020-05-07T17:25:35.831Z",
+        "timezone": "UTC"
+    },
+    "updatedDate": {
+        "value": "2020-05-07T17:25:35.831Z",
+        "timezone": "UTC"
+    },
+    "fields": {
+        "blog_author": {
+            "id": "CORE99E32A5D32964F3EBA9886ACEDE97DB8",
+            "type": "Author",
+            "name": "Janet Picard",
+            "links": [
+                {
+                    "href": "https://ocereference-oce0004.cec.ocp.oraclecloud.com/content/published/api/v1.1/items/CORE99E32A5D32964F3EBA9886ACEDE97DB8?channelToken=6ebf41e74bda4abeb5d8120cde94b7e4",
+                    "rel": "self",
+                    "method": "GET",
+                    "mediaType": "application/json"
+                }
+            ]
+        },
+        "blog_category": "HOW TO",
+        "blog_content": "<!DOCTYPE html><p style=\"font-size: 13px;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus eu purus ac maximus. Morbi quis dignissim nisl. Nullam maximus urna sed enim eleifend efficitur. Suspendisse sagittis nulla egestas ligula placerat consequat. Morbi eget odio quis lacus laoreet lacinia. Cras vel mollis arcu, et ultricies enim. Sed at mi sed ante blandit tincidunt vitae nec ante. Proin congue id leo sed pellentesque. Nam blandit sollicitudin enim, sed venenatis mi sagittis vel. Maecenas gravida feugiat purus, et bibendum sem. Proin diam libero, placerat at risus ut, volutpat posuere turpis. Aliquam in mauris mauris. Curabitur vehicula diam at risus blandit, ut elementum enim dictum. In ac interdum turpis.<o:p></o:p></p>\n\n<p style=\"font-size: 13px;\"><o:p></o:p><o:p></o:p></p>\n\n<p style=\"font-size: 13px;\">&nbsp;</p>\n\n<p style=\"font-size: 13px;\">Proin ac enim non neque pellentesque bibendum et eu sem. Suspendisse a purus ut tortor scelerisque pharetra. Nullam maximus tempor vulputate. Vivamus malesuada, libero vel placerat euismod, magna lacus mattis lectus, dignissim pellentesque massa risus eu mauris. Vivamus scelerisque nunc diam, eu tristique metus viverra at. Fusce nunc tellus, congue quis dictum eget, malesuada nec tellus. Curabitur pretium consectetur lacinia. Fusce et metus mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce fermentum at mauris sed rhoncus. Aenean ut accumsan quam. Duis velit leo, tempor sit amet eros sed, aliquam sodales lorem.<o:p></o:p></p>\n\n<p style=\"font-size: 13px;\"><o:p>&nbsp;</o:p></p>\n\n<p style=\"font-size: 13px;\">Mauris eu neque vitae odio eleifend bibendum. Morbi bibendum aliquam lectus at congue. Nunc vulputate tempor augue eu suscipit. Vivamus enim diam, vehicula eget justo non, elementum consequat nibh. Ut lectus odio, lacinia eget nulla vel, pharetra laoreet arcu. Sed in lectus vitae orci auctor luctus vel non risus. Morbi non turpis leo. Nunc tempus augue eget semper tristique. Phasellus faucibus placerat massa non tincidunt.</p>\n",
+        "blog_textposition": "Center",
+        "blog_image_header": {
+            "id": "CONTDDA43F026FC2401EBFD26B879CA838ED",
+            "type": "DigitalAsset",
+            "name": "Blog_12_Header_1440x540px.jpg",
+            "links": [
+                {
+                    "href": "https://ocereference-oce0004.cec.ocp.oraclecloud.com/content/published/api/v1.1/items/CONTDDA43F026FC2401EBFD26B879CA838ED?channelToken=6ebf41e74bda4abeb5d8120cde94b7e4",
+                    "rel": "self",
+                    "method": "GET",
+                    "mediaType": "application/json"
+                }
+            ]
+        },
+        "blog_image_ad": {
+            "id": "CONT2DAC818E18A24CBBA9C44898172C723F",
+            "type": "DigitalAsset",
+            "name": "Blog_12_Ad_Image_600x266px.jpg",
+            "links": [
+                {
+                    "href": "https://ocereference-oce0004.cec.ocp.oraclecloud.com/content/published/api/v1.1/items/CONT2DAC818E18A24CBBA9C44898172C723F?channelToken=6ebf41e74bda4abeb5d8120cde94b7e4",
+                    "rel": "self",
+                    "method": "GET",
+                    "mediaType": "application/json"
+                }
+            ]
+        },
+        "blog_image_ad_small": {
+            "id": "CONT6205A21D8A6B4CEAB841F1862152A635",
+            "type": "DigitalAsset",
+            "name": "Blog_12_sm_Ad_Image_307x150px.jpg",
+            "links": [
+                {
+                    "href": "https://ocereference-oce0004.cec.ocp.oraclecloud.com/content/published/api/v1.1/items/CONT6205A21D8A6B4CEAB841F1862152A635?channelToken=6ebf41e74bda4abeb5d8120cde94b7e4",
+                    "rel": "self",
+                    "method": "GET",
+                    "mediaType": "application/json"
+                }
+            ]
+        },
+        "blog_image_thumbnail": {
+            "id": "CONT07493C574CEE428DB2D0560D48D84D97",
+            "type": "DigitalAsset",
+            "name": "Blog_12_Thumb_400px.jpg",
+            "links": [
+                {
+                    "href": "https://ocereference-oce0004.cec.ocp.oraclecloud.com/content/published/api/v1.1/items/CONT07493C574CEE428DB2D0560D48D84D97?channelToken=6ebf41e74bda4abeb5d8120cde94b7e4",
+                    "rel": "self",
+                    "method": "GET",
+                    "mediaType": "application/json"
+                }
+            ]
+        },
+        "blog_textcolor": "Light"
+    },
+    "links": [
+        {
+            "href": "https://ocereference-oce0004.cec.ocp.oraclecloud.com/content/published/api/v1.1/items/CORE9197A4DF34C341ED871960B44C25994D?channelToken=6ebf41e74bda4abeb5d8120cde94b7e4",
+            "rel": "self",
+            "method": "GET",
+            "mediaType": "application/json"
+        },
+        {
+            "href": "https://ocereference-oce0004.cec.ocp.oraclecloud.com/content/published/api/v1.1/items/CORE9197A4DF34C341ED871960B44C25994D?channelToken=6ebf41e74bda4abeb5d8120cde94b7e4",
+            "rel": "canonical",
+            "method": "GET",
+            "mediaType": "application/json"
+        },
+        {
+            "href": "https://ocereference-oce0004.cec.ocp.oraclecloud.com/content/published/api/v1.1/metadata-catalog/items/CORE9197A4DF34C341ED871960B44C25994D?channelToken=6ebf41e74bda4abeb5d8120cde94b7e4",
+            "rel": "describedby",
+            "method": "GET",
+            "mediaType": "application/schema+json"
+        }
+    ]
+}

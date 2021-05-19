@@ -1,0 +1,185 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+    "drinksGallery": {
+      "type": [
+        {
+          "CONT18CEE3D15711463A97C374E4CB8FF7AC": "string",
+          "CONT36AFA5816622442F80CC7280E27BCE4E": "string",
+          "CONT396FE225C1264F53BCFCC07FD7998A9E": "string",
+          "CONT48148F7AE1A0459BB1C9C9CE1C40B290": "string",
+          "CONT684267F11FD349D581DB1D8EFF663F44": "string",
+          "CONT690B06C8494C44DDA1535F8496A87521": "string",
+          "CONT6BD73DD54B4E4B3DABB6AF982BC2872C": "string",
+          "CONT73DFA4104DC64E709C653BF3C7703CB3": "string",
+          "CONT75E6706D3B044D06A5E2A466DDA23E7F": "string",
+          "CONT9CE5A3AAD26A4568A8A245072EFE96F9": "string",
+          "CONTA13BFDA042C542828E87710CFCD38090": "string",
+          "CONTA4616DD8651246949C1D2EF0542A511B": "string",
+          "CONTB6D3D88BDC6649B2AABBBD5B566554EF": "string",
+          "CONTC850578A36FA43A58825F3077F48D9D1": "string",
+          "CONTCB7E6EE0DD114FDB8D01D4EDD6A6DDA9": "string",
+          "CONTD0DBB6372B064A91A98306C1DA9C2040": "string",
+          "CONTF7CAD2925E1849F2A658FAE1D22D9933": "string"
+        }
+      ]
+    }
+  },
+  "metadata": {},
+  "types": {
+    "drinksGallery": "object[]"
+  },
+  "chains": {
+    "ButtonActionChain": {
+      "description": "",
+      "root": "navigateToMainStart",
+      "actions": {
+        "navigateToMainStart": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "main-start"
+          }
+        }
+      },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    },
+    "ButtonClickChain": {
+      "description": "",
+      "root": "navigateToMainDrinks",
+      "actions": {
+        "navigateToMainDrinks": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "main-drinks"
+          }
+        }
+      },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    },
+    "OCEImageClickChain": {
+      "description": "",
+      "root": "callFunctionShowImageGallery2",
+      "actions": {
+        "callFunctionShowImageGallery2": {
+          "module": "vb/action/builtin/callModuleFunctionAction",
+          "parameters": {
+            "module": "[[ $functions ]]",
+            "functionName": "ShowImageGallery"
+          }
+        }
+    },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    },
+    "OCEImageClickChain1": {
+      "description": "",
+      "root": "",
+      "actions": {},
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    },
+    "OCEImageClickChain2": {
+      "description": "",
+      "root": "",
+      "actions": {},
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    }
+  },
+  "eventListeners": {
+    "ojButtonClick": {
+      "chains": [
+        {
+          "chainId": "ButtonClickChain",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    },
+    "ojButtonOjAction": {
+      "chains": [
+        {
+          "chainId": "ButtonActionChain",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    },
+    "ojOceImageClick": {
+      "chains": [
+        {
+          "chainId": "OCEImageClickChain",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    },
+    "ojOceImageClick2": {
+      "chains": [
+        {
+          "chainId": "OCEImageClickChain1",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    },
+    "ojOceImageClick3": {
+      "chains": [
+        {
+          "chainId": "OCEImageClickChain2",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-masonry-layout": {
+        "path": "ojs/ojmasonrylayout"
+      },
+      "oj-oce-gallery": {
+        "path": "oj-oce/gallery/loader"
+      },
+      "oj-oce-image": {
+        "path": "oj-oce/image/loader"
+      }
+    }
+  }
+}

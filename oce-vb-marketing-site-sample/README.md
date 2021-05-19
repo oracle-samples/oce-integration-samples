@@ -1,24 +1,24 @@
-# About the OCE VB Marketing Site Sample
+# About the Marketing Site Sample using Oracle Visual Builder
 
-This sample demonstrates how to use Oracle Content and Experience (OCE) components built for Oracle Visual Builder to surface OCE-managed content in Oracle Visual Builder with a seamless application-building experience.
+This sample demonstrates how to use Oracle Content Management components built for Oracle Visual Builder to surface managed content in Oracle Visual Builder with a seamless application-building experience.
 
 ## Prerequisites
 
-To use this sample, you'll need a user account for Oracle Visual Builder as well as access to Oracle Content and Experience.
+To use this sample, you'll need a user account for Oracle Visual Builder as well as access to Oracle Content Managment.
 
 ## Installation
 
 ### Download
 
-Download cafe-supremo-demo.zip from the latest [release](https://github.com/oracle/oce-integration-samples/releases/latest).
+Download oce-vb-marketing-sites-sample.zip from the latest [release](https://github.com/oracle/oce-integration-samples/releases/latest).
 
 ### Import Application
 
-The cafe-supremo-demo.zip file must be imported into Oracle Visual Builder:
+The oce-vb-marketing-sites-sample.zip file must be imported into Oracle Visual Builder:
 
 1. Sign in to Oracle Visual Builder.
 2. Import the template application by choosing Import > Application from file.
-3. Upload the file cafe-supremo-demo.zip.
+3. Upload the file oce-vb-marketing-sites-sample.zip.
 4. Complete the application details.
 5. Click Import.
 

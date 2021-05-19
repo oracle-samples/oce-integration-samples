@@ -1,0 +1,197 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {},
+  "metadata": {},
+  "types": {},
+  "chains": {
+    "ButtonActionChain": {
+      "description": "",
+      "root": "navigateToMainStart",
+      "actions": {
+        "navigateToMainStart": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "main-start"
+          }
+        }
+      },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    },
+    "OCEImageClickChain": {
+      "description": "",
+      "root": "callFunctionReorderImages",
+      "actions": {
+        "callFunctionReorderImages": {
+          "module": "vb/action/builtin/callModuleFunctionAction",
+          "parameters": {
+            "module": "[[ $functions ]]",
+            "functionName": "reorderImages",
+            "params": [
+              "{{ $variables.srcElement }}",
+              "{{ $flow.variables.DrinksGallery }}"
+            ],
+            "returnType": "object[]"
+          },
+          "outcomes": {
+            "success": "assignVariables"
+          },
+          "description": "Reorder content image array to put the image associated with the src element first."
+        },
+        "assignVariables": {
+          "module": "vb/action/builtin/assignVariablesAction",
+          "parameters": {
+            "$flow.variables.DrinksGallery": {
+              "source": "{{ $chain.results.callFunctionReorderImages }}",
+              "reset": "empty"
+            }
+          },
+          "outcomes": {
+            "success": "navigateToMainDrinksGallery"
+          },
+          "description": "Update DrinksGallery flow variable based on the result of the reorderImages() call."
+        },
+        "navigateToMainDrinksGallery": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "main-drinksgallery"
+          }
+        }
+    },
+      "variables": {
+        "contentImages": {
+          "type": "object[]",
+          "required": false,
+          "input": "fromCaller"
+        },
+        "srcElement": {
+          "type": "any",
+          "required": true,
+          "input": "fromCaller"
+        }
+      }
+    },
+    "OCEImageClickChain1": {
+      "description": "",
+      "root": "",
+      "actions": {},
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    },
+    "OCEImageClickChain2": {
+      "description": "",
+      "root": "",
+      "actions": {},
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    },
+    "OCEImageClickChain3": {
+      "description": "",
+      "root": "navigateToMainDrinksgallery",
+      "actions": {
+        "navigateToMainDrinksgallery": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "main-drinksgallery"
+          }
+        }
+      },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    }
+  },
+  "eventListeners": {
+    "ojButtonOjAction": {
+      "chains": [
+        {
+          "chainId": "ButtonActionChain",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    },
+    "ojOceImageClick": {
+      "chains": [
+        {
+          "chainId": "OCEImageClickChain",
+          "parameters": {
+            "detail": "{{ $event.detail }}",
+            "srcElement": "{{ $event.srcElement }}"
+          }
+        }
+      ]
+    },
+    "ojOceImageClick2": {
+      "chains": [
+        {
+          "chainId": "OCEImageClickChain1",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    },
+    "ojOceImageClick3": {
+      "chains": [
+        {
+          "chainId": "OCEImageClickChain2",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    },
+    "ojOceImageClick4": {
+      "chains": [
+        {
+          "chainId": "OCEImageClickChain3",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-masonry-layout": {
+        "path": "ojs/ojmasonrylayout"
+      },
+      "oj-oce-gallery": {
+        "path": "oj-oce/gallery/loader"
+      },
+      "oj-oce-image": {
+        "path": "oj-oce/image/loader"
+      },
+      "oj-oce-uploader": {
+        "path": "oj-oce/uploader/loader"
+      }
+    }
+  },
+  "events": {}
+}

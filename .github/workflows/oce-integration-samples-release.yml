@@ -1,0 +1,54 @@
+on:
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+    - 'v*'
+
+name: Upload Release Assets
+
+jobs:
+  build:
+    name: Release integration-samples
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set output
+        id: vars
+        run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+      - name: Build Marketing Site
+        run: |
+          cd oce-vb-marketing-site-sample/cafe-supremo-demo && zip  -r ../oce-vb-marketing-sites-sample.zip *
+      - name: Build Image Gallery
+        run: |
+          cd oce-vb-image-gallery-sample/gallerysample && zip  -r ../oce-vb-image-gallery-sample.zip *
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: oce-integration-samples ${{ github.ref }}
+          draft: false
+          prerelease: false
+      - name: Upload Release Asset
+        id: upload-oce-vb-marketing-site-sample
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./oce-vb-marketing-site-sample/oce-vb-marketing-sites-sample.zip
+          asset_name: oce-vb-marketing-sites-sample.zip
+          asset_content_type: application/zip
+      - name: Upload Release Asset
+        id: upload-oce-vb-image-gallery-sample
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./oce-vb-image-gallery-sample/oce-vb-image-gallery-sample.zip
+          asset_name: oce-vb-image-gallery-sample.zip
+          asset_content_type: application/zip
