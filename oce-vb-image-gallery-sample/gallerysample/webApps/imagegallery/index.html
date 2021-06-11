@@ -1,0 +1,53 @@
+<!--
+ * Copyright (c) 2021 Oracle and/or its affiliates.
+ * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://static.oracle.com">
+  <link rel="preconnect" href="https://rt.oraclevb.com">
+  <!-- vb:inject id="headContent" theme="resources/css/dt.theme.redwood" -->
+  <link type="text/css" rel="stylesheet" href="resources/css/app.css">
+</head>
+
+<body class="oj-web-applayout-body vb-web-applayout-body">
+
+<oj-vb-content config="[[vbApplication]]"></oj-vb-content>
+
+<!-- visualBuilderScripts -->
+
+<link id="favicon-light" rel="icon" href="resources/images/favicon-light.ico" type="image/ico">
+<link id="favicon-dark" rel="icon" href="resources/images/favicon-dark.ico" type="image/ico">
+<script>
+  // The "oj_whenReady" global variable enables a strategy that the busy context whenReady,
+  // will implicitly add a busy state, until the application framework calls applicationBootstrapComplete
+  // on the busy state context. This will be useful for automated testing frameworks
+  window["oj_whenReady"] = true;
+
+  const lightIcon = document.getElementById('favicon-light');
+  const darkIcon = document.getElementById('favicon-dark');
+  const matcher = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function switchIcon() {
+    if (matcher.matches) {
+      darkIcon.remove();
+      document.head.append(lightIcon);
+    } else {
+      lightIcon.remove();
+      document.head.append(darkIcon);
+    }
+  }
+
+  if (matcher.addEventListener) {
+    matcher.addEventListener('change', switchIcon);
+  }
+  switchIcon();
+</script>
+</body>
+
+</html>

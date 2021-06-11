@@ -1,0 +1,87 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+  },
+  "metadata": {},
+  "types": {
+  },
+  "chains": {
+    "CallFunction": {
+      "description": "",
+      "root": "callFunctionShowImageGallery2",
+      "actions": {
+        "callFunctionShowImageGallery2": {
+          "module": "vb/action/builtin/callModuleFunctionAction",
+          "parameters": {
+            "module": "[[ $functions ]]",
+            "functionName": "ShowImageGallery"
+          }
+        }
+      },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    },
+    "CloseGallery": {
+      "description": "",
+      "root": "navigateToMainDessert",
+      "actions": {
+        "navigateToMainDessert": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "main-dessert"
+          }
+        }
+      },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    }
+
+  },
+  "eventListeners": {
+    "ojButtonClick": {
+      "chains": [
+        {
+          "chainId": "CloseGallery",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    },
+    "ojOceImageClick": {
+      "chains": [
+        {
+          "chainId": "CallFunction",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      
+      "oj-oce-gallery": {
+        "path": "oj-oce/gallery/loader"
+      },
+      "oj-oce-image": {
+        "path": "oj-oce/image/loader"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<!--
+ * Copyright (c) 2021 Oracle and/or its affiliates.
+ * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+-->
+<oj-button class="oj-button-sm" display="icons" on-oj-action="[[$listeners.ojButtonOjAction]]">Back</oj-button>
+
+<h1> <div style="text-align: center;">Sandwiches</div> </h1>
+<h4> <div style="text-align: center; color:#808080">17 photos</div> </h4>
+
+<div class="oj-flex oj-sm-justify-content-center oj-sm-align-items-center">
+  <oj-bind-for-each data="[[$flow.variables.SandwichGallery]]">
+    <template>
+      <oj-oce-image content-server="[[$application.variables.contentServer]]"
+       channel-token="[[$application.variables.channelToken]]"
+       class="oj-flex-item oj-sm-12 oj-md-2" content-image="[[$current.data.id]]" rendition="Native"
+       style="width:33%; margin: 0px 10px 0px 0px;" on-click="[[$listeners.ojOceImageClick]]">
+     </oj-oce-image>
+    </template>
+  </oj-bind-for-each> 
+</div>

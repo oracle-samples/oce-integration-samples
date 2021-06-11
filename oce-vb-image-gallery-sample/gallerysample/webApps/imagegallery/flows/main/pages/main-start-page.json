@@ -1,0 +1,188 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {},
+  "metadata": {},
+  "types": {},
+  "chains": {
+    "GoToAssetUploaderPage": {
+      "description": "",
+      "root": "navigateToUploadAssets",
+      "actions": {
+        "navigateToUploadAssets": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "upload_assets"
+          }
+        }
+      },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    },
+    "GoToBreakFastPage": {
+      "description": "",
+      "root": "navigateToMainBf",
+      "actions": {
+        "navigateToMainBf": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "main-bf"
+          }
+        }
+      },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    },
+    "GoToDessertsPage": {
+      "description": "",
+      "root": "navigateToMainDessert",
+      "actions": {
+        "navigateToMainDessert": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "main-dessert"
+          }
+        }
+      },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    },
+    "GoToDrinkPage": {
+      "description": "",
+      "root": "navigateToMainDrinks",
+      "actions": {
+        "navigateToMainDrinks": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "main-drinks"
+          }
+        }
+      },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    },
+   
+    "GoToFoodPage": {
+      "description": "",
+      "root": "navigateToMainFood",
+      "actions": {
+        "navigateToMainFood": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "main-food"
+          }
+        }
+      },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    },
+    "GoToSandwichPage": {
+      "description": "",
+      "root": "navigateToMainSandwich",
+      "actions": {
+        "navigateToMainSandwich": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "main-sandwich"
+          }
+        }
+      },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    }
+  },
+  "eventListeners": {
+
+    "ojOceImageClick2": {
+      "chains": [
+        {
+          "chainId": "GoToFoodPage",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    },
+    "ojOceImageClick3": {
+      "chains": [
+        {
+          "chainId": "GoToBreakFastPage",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    },
+    "ojOceImageClick4": {
+      "chains": [
+        {
+          "chainId": "GoToDessertsPage",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    },
+    "ojOceImageClick5": {
+      "chains": [
+        {
+          "chainId": "GoToSandwichPage",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    },
+    "ojOceImageClick6": {
+      "chains": [
+        {
+          "chainId": "GoToDrinkPage"
+        }
+      ]
+    },
+    "ojOceImageClick7": {
+      "chains": [
+        {
+          "chainId": "GoToAssetUploaderPage"
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-oce-image": {
+        "path": "oj-oce/image/loader"
+      }
+    }
+  }
+}

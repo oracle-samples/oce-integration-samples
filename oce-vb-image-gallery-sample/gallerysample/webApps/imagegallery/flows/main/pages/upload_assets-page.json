@@ -1,0 +1,51 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {},
+  "metadata": {},
+  "types": {},
+  "chains": {
+    "BackButton": {
+      "description": "",
+      "root": "navigateToMainStart",
+      "actions": {
+        "navigateToMainStart": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "main-start"
+          }
+        }
+      },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    }
+  },
+  "eventListeners": {
+    "ojButtonOjAction": {
+      "chains": [
+        {
+          "chainId": "BackButton",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-oce-uploader": {
+        "path": "oj-oce/uploader/loader"
+      }
+    }
+  },
+  "events": {}
+}

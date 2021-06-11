@@ -1,0 +1,117 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {},
+  "metadata": {},
+  "types": {},
+  "chains": {
+    "BackButton": {
+      "description": "",
+      "root": "navigateToMainStart",
+      "actions": {
+        "navigateToMainStart": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "main-start"
+          }
+        }
+      },
+      "variables": {
+        "detail": {
+          "required": true,
+          "type": "any",
+          "input": "fromCaller"
+        }
+      }
+    },
+    "CallFunction": {
+      "description": "",
+      "root": "callFunctionReorderImages",
+      "actions": {
+        "callFunctionReorderImages": {
+          "module": "vb/action/builtin/callModuleFunctionAction",
+          "parameters": {
+            "module": "[[ $functions ]]",
+            "functionName": "reorderImages",
+            "params": [
+              "{{ $variables.srcElement }}",
+              "{{ $flow.variables.DrinkGallery }}"
+            ],
+            "returnType": "object[]"
+          },
+          "outcomes": {
+            "success": "assignVariables"
+          },
+          "description": "Reorder content image array to put the image associated with the src element first."
+        },
+        "assignVariables": {
+          "module": "vb/action/builtin/assignVariablesAction",
+          "parameters": {
+            "$flow.variables.DrinkGallery": {
+              "source": "{{ $chain.results.callFunctionReorderImages }}",
+              "reset": "empty"
+            }
+          },
+          "outcomes": {
+            "success": "navigateToMainDrinksGallery"
+          },
+          "description": "Update DrinksGallery flow variable based on the result of the reorderImages() call."
+        },
+        "navigateToMainDrinksGallery": {
+          "module": "vb/action/builtin/navigateToPageAction",
+          "parameters": {
+            "page": "main-drinksgallery"
+          }
+        }
+      },
+      "variables": {
+        "srcElement": {
+          "type": "any",
+          "required": true,
+          "input": "fromCaller"
+        }
+      }
+    }
+  },
+  "eventListeners": {
+    "ojButtonOjAction": {
+      "chains": [
+        {
+          "chainId": "BackButton",
+          "parameters": {
+            "detail": "{{ $event.detail }}"
+          }
+        }
+      ]
+    },
+    "ojOceImageClick": {
+      "chains": [
+        {
+          "chainId": "CallFunction",
+          "parameters": {
+            "detail": "{{ $event.detail }}",
+            "srcElement": "{{ $event.srcElement }}"
+          }
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      
+      "oj-oce-gallery": {
+        "path": "oj-oce/gallery/loader"
+      },
+      "oj-oce-image": {
+        "path": "oj-oce/image/loader"
+      },
+      "oj-oce-uploader": {
+        "path": "oj-oce/uploader/loader"
+      }
+    }
+  },
+  "events": {}
+}

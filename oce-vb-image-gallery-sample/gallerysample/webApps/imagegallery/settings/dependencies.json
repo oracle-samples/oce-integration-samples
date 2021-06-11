@@ -3,8 +3,8 @@
     "oj-oce": {
       "version": "2.2.0",
       "components": {
-        "uploader": "2.2.0",
         "image": "2.2.0",
+        "uploader": "2.2.0",
         "gallery": "2.2.0"
       }
     }

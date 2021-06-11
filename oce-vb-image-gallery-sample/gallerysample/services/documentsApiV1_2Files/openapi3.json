@@ -6,13 +6,14 @@
     },
     "servers": [
         {
-            "url": "https://ocereference-oce0004.cec.ocp.oraclecloud.com/documents/api/1.2/files",
+            "url": "https://samples-oce0001.cec.ocp.oraclecloud.com/documents/api/1.2/files",
             "description": "Documents Api",
             "x-vb": {
                 "authentication": {
                     "authenticated": {
                         "type": "oauth2_user_assertion",
-                        "scope": "https://26629BEC35A1421D9D14C82B0E4F2936.cec.ocp.oraclecloud.com:443/urn:opc:cec:all"
+                        "scope": "https://95358A60C1384C9F96639999E2E78F06.cec.ocp.oraclecloud.com:443/urn:opc:cec:all"
+
                     }
                 }
             }

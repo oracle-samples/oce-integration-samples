@@ -1,0 +1,49 @@
+<!--
+ * Copyright (c) 2021 Oracle and/or its affiliates.
+ * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+-->
+<!-- vb default-layout:block -->
+
+<h1> <div style="text-align: center;">Image Gallery</div> </h1>
+
+<div class="oj-sm-flex-wrap-nowrap oj-flex oj-sm-justify-content-space-around">
+  
+  <oj-oce-image content-server="[[$application.variables.contentServer]]"
+    channel-token="[[$application.variables.channelToken]]" class="oj-flex-item oj-sm-flex-initial"
+    content-image="CONTF8D0027304C84C6D96892BD650AA44C2" rendition="Native" style="width:33%; margin: 0px 10px 0px 0px;"
+    caption="Food" on-click="[[$listeners.ojOceImageClick2]]"> 
+   </oj-oce-image>
+  
+    <oj-oce-image content-server="[[ $application.variables.contentServer ]]"
+        channel-token="[[$application.variables.channelToken]]"
+        class="oj-flex-item oj-sm-flex-initial" content-image="CONT900B3B046BBE41E69D46B8F4F2168676" rendition="Native"
+        style="width:33%; margin: 0px 10px 0px 0px;" caption="Breakfast" on-click="[[$listeners.ojOceImageClick3]]">
+    </oj-oce-image>
+
+    <oj-oce-image content-server="[[$application.variables.contentServer]]"
+        channel-token="[[$application.variables.channelToken]]"
+        class="oj-flex-item oj-sm-flex-initial" content-image="CONTC953A9E360CB4D91BF26C44D1E2335D7" rendition="Native"
+        style="width:33%; margin: 0px 10px 0px 0px;" caption="Dessert" on-click="[[$listeners.ojOceImageClick4]]">
+    </oj-oce-image>
+</div>
+
+<div class="oj-flex oj-sm-align-items-center oj-sm-justify-content-center oj-sm-flex-wrap-nowrap">
+      <oj-oce-image content-server="[[$application.variables.contentServer]]"
+        channel-token="[[$application.variables.channelToken]]" class="oj-flex-item oj-sm-flex-initial"
+        content-image="CONT3424825C21EF4C8393101BFDB47ACD9E" rendition="Native"
+        style="width:33%; margin: 30px 10px 0px 0px;" alt="Sandwiches" caption="Sandwiches" on-click="[[$listeners.ojOceImageClick5]]">
+      </oj-oce-image>
+  
+      <oj-oce-image content-server="[[$application.variables.contentServer]]"
+        channel-token="[[$application.variables.channelToken]]" class="oj-flex-item oj-sm-flex-initial"
+        content-image="CONT5945637F95394FFF9B478ACC0AB9B96D" rendition="Native"
+        style="width:33%; margin: 30px 10px 0px 0px;" caption="Drinks" on-click="[[$listeners.ojOceImageClick6]]">
+      </oj-oce-image>
+
+      <oj-oce-image content-server="[[$application.variables.contentServer]]"
+        channel-token="[[$application.variables.channelToken]]"
+        class="oj-flex-item oj-sm-flex-initial oj-sm-align-self-flex-end" rendition="Native"
+        style="width:33%; margin: 30px 10px 0px 0px;" on-click="[[$listeners.ojOceImageClick7]]"
+        content-image="CONT08707781337F4849AB51A0CCA92EC4B7" caption="Upload Assets" debug="true">
+      </oj-oce-image>
+</div>
