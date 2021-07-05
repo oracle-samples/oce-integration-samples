@@ -50,7 +50,7 @@
     },
     "contentServer": {
       "type": "string",
-      "defaultValue": "https://samples-oce0001.cec.ocp.oraclecloud.com"
+      "defaultValue": "https://samples.mycontentdemo.com"
     }
   },
   "eventListeners": {
