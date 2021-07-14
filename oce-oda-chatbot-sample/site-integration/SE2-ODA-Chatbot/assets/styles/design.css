@@ -1,0 +1,176 @@
+/**
+ * Copyright (c) 2021 Oracle and/or its affiliates.
+ * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+ */
+
+/* ODA Card Layout CSS */
+
+.oda-chat-card {
+    border-radius: 0px !important;
+    padding: 2px !important;
+}
+.oda-chat-card-image {
+    height: 188px !important;
+    max-width: 100%;
+    width: 330px !important;
+}
+.oda-chat-card-title {
+    font-weight: bold !important;
+    margin: 0px !important;
+    white-space: normal !important;
+    text-align: left !important;
+    padding: 10px !important;
+}
+
+.oda-chat-card-description {
+    font-size: small !important;
+}
+
+/*  Message Layout CSS  */
+
+.oda-chat-message-global-actions {
+    justify-content: space-evenly !important;
+    flex-direction: row !important;
+    margin-top: 5px !important;
+    width: 330px !important;
+}
+
+.oda-chat-action-postback:first-of-type {
+    margin-top: 4px !important;
+}
+
+.oda-chat-action-postback:last-of-type {
+    margin-bottom: 4px !important;
+}
+
+.oda-chat-action-postback {
+    padding: 10px !important;
+    font-size: 13px !important;
+    display: inline !important;
+    flex: none !important;
+}
+
+.oda-chat-round {
+    height: 36px !important;
+    width: 24px !important;
+}
+
+.oda-chat-message-bubble {
+    padding: 10px !important;
+}
+
+.oda-chat-left .oda-chat-message-bubble {
+    border-radius: 20px 20px 20px 0 !important;
+}
+
+.oda-chat-message-content{
+    margin: 1px !important;
+    white-space: normal !important;
+}
+
+/* Story Layout CSS */
+
+.Bot-SE2-Story-readNext {
+    outline:none;
+}
+.Bot-SE2-Story-readNext .Bot-contentWrapper {
+    height: 100%;
+}
+.Bot-SE2-Story-readNext .Bot-imgDiv {
+    float: right;
+    width: 43%;
+    height: 100%;
+    padding-right: 0px;
+    background-color: #655f5c;
+    position: relative;
+    outline:none;
+    display: flex;
+}
+.Bot-SE2-Story-readNext .Bot-imgDiv img {
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+    outline:none;
+}
+.Bot-SE2-Story-readNext .Bot-imgDiv video {
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+    background: black;
+    outline:none;
+}
+.Bot-SE2-Story-readNext .Bot-imgDiv video:hover,
+.Bot-SE2-Story-readNext .Bot-imgDiv video:focus {
+    cursor: pointer;
+}
+.Bot-SE2-Story-readNext .Bot-TextDiv {
+    float: left;
+    width: 53%;
+    height: 100%;
+    position: relative;
+    outline:none;
+}
+.Bot-SE2-Story-readNext .Bot-NoMediaTextDiv {
+    width:100%;
+    height:100%;
+    position: relative;
+    outline:none;
+}
+.Bot-SE2-Story-readNext .Bot-AuthorTitle {
+    width: 100%;
+}
+.Bot-SE2-Story-readNext .Bot-Author {
+    color:#FFFFFF;
+    font-family: HelveticaNeue;
+    display: flex;
+}
+.Bot-SE2-Story-readNext .Bot-Date {
+    padding-left: .2rem;
+}
+.Bot-SE2-Story-readNext .Bot-Title {
+    font-weight: bold;
+    position: relative;
+    outline:none;
+    padding-bottom: 3px;
+	padding-top: 2px;
+}
+.Bot-SE2-Story-readNext .Bot-Summary {
+    margin-top: 0.3125rem;
+    margin-bottom: 0.3125rem;
+    position: relative;
+    outline:none;
+}
+.Bot-font14 {
+    font-size: 13px;
+    color:#FFFFFF;
+}
+.Bot-font14-2LineEllipsis {
+    line-height: 1.214em;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    max-height: 2.428em;
+}
+.Bot-font12 {
+    font-weight: normal;
+    font-size: 9px;
+    letter-spacing: 0.43px;
+    color:#FFFFFF;
+    line-height: 1.333em;
+}
+.Bot-font12-2LineEllipsis {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    max-height: 4.5em;
+}
+.Bot-font16-1LineEllipsis {
+    -webkit-line-clamp: 1;
+    max-height: 1.375em;
+}

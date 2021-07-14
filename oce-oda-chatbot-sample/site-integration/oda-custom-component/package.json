@@ -1,0 +1,28 @@
+{
+  "author": "Oracle America, Inc.",
+  "license": "UPL-1.0",
+  "name": "oda-custom-component",
+  "version": "1.0.0",
+  "description": "Oracle Bots Custom Component Package",
+  "main": "main.js",
+  "scripts": {
+    "bots-node-sdk": "bots-node-sdk",
+    "help": "npm run bots-node-sdk -- --help",
+    "lint": "eslint . --ext .js",
+    "prepack": "npm run bots-node-sdk -- pack --dry-run",
+    "start": "npm run bots-node-sdk -- service ."
+  },
+  "repository": {},
+  "dependencies": {
+    "@oracle/content-management-sdk": "^1.2.0"
+  },
+  "devDependencies": {
+    "@oracle/bots-node-sdk": "~2.4.1",
+    "eslint": "~7.11.0",
+    "eslint-config-airbnb": "~18.2.0",
+    "eslint-plugin-import": "~2.22.1"
+  },
+  "bundledDependencies": [
+    "@oracle/content-management-sdk"
+  ]
+}

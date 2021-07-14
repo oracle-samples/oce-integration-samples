@@ -1,0 +1,63 @@
+{
+  "name" : "TopMenu",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "trackingId" : "452374E1-61C2-4962-9245-492FB0A80F35",
+    "canonicalName" : "Home",
+    "synonyms" : null,
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Home",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "35BBC21F-D762-41A7-81EB-22A8173C6520",
+    "canonicalName" : "Cafe Supremo",
+    "synonyms" : [ "cafe" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Cafe Supremo",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "C33471A2-0FD6-42A6-BC65-4FE26AE674F1",
+    "canonicalName" : "Coffee Machines",
+    "synonyms" : [ "machine", "machines", "coffee machine" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Coffee Machines",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "400B6B1A-B7DB-4ABD-84B1-A9AFD583B37E",
+    "canonicalName" : "Learning",
+    "synonyms" : [ "learn" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Learning",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "05F83ACD-E3B2-4660-BA9D-A94F4F9D993B",
+    "canonicalName" : "Selling",
+    "synonyms" : [ "sell", "sales" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Selling",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "9CDAECC4-BC88-4FC6-BDFF-24B052241CCA",
+    "canonicalName" : "FAQs",
+    "synonyms" : [ "faq's", "frequently asked questions", "faq" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "FAQs",
+    "nativeLanguageTag" : "en"
+  } ],
+  "multiValue" : false,
+  "fuzzyMatch" : true,
+  "promptForDisambiguation" : true,
+  "disambiguationPrompt" : "Please choose appropriate category",
+  "botPrompts" : [ {
+    "text" : "Choose topic",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "trackingId" : "2663E80A-410D-4AD1-82A1-34D5DDBF910E"
+}

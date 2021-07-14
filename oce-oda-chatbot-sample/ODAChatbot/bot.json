@@ -1,0 +1,14 @@
+{
+  "type" : "USER",
+  "trackingId" : "84A21ABA-41E8-499C-88D3-C57E03B75673",
+  "name" : "ODAChatbot",
+  "displayName" : "ODA Chatbot",
+  "description" : "This Skill is a part of the Headless Oracle Content Management ODA Chatbot Sample",
+  "version" : "1.0",
+  "intentTrainer" : "Sakura",
+  "autoCompleteTrainingStatus" : "NO_DATA",
+  "requiresAutoCompleteTraining" : false,
+  "platformVersion" : "21.04",
+  "primaryLanguageTag" : "en",
+  "multilingualMode" : "NATIVE"
+}

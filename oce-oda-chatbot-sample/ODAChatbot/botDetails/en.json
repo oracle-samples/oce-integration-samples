@@ -1,0 +1,8 @@
+{
+  "invocationName" : "ODA Chatbot",
+  "shortDescription" : "This Skill is a part of the Headless Oracle Content Management ODA Chatbot Sample",
+  "fullDescription" : null,
+  "trackingId" : "CDCB5B5A-3034-491F-8758-BD421B31E070",
+  "sampleInvocations" : [ "An example utterance" ],
+  "nativeLanguageTag" : "en"
+}

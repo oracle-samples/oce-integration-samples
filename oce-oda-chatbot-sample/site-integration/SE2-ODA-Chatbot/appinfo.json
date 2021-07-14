@@ -1,0 +1,17 @@
+{
+	"id": "SE2-ODA-Chatbot",
+	"settingsData": {
+		"settingsHeight": 300,
+		"settingsWidth": 300,
+		"settingsRenderOption": "dialog"
+	},
+	"initialData": {
+		"componentId": "SE2-ODA-Chatbot",
+		"customSettingsData": {
+			"odaURI": "oda-7fcccc02d7f043c8a76d091eb51c8011-da11.data.digitalassistant.oci.oraclecloud.com/",
+			"channelId": "b97d7ef4-d596-493b-a07e-1f0b2128cded",
+			"chatTitle": "Sales Enablement Bot",
+			"odaConfig": ""
+		}
+	}
+}

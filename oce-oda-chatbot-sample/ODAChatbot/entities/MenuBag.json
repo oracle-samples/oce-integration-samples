@@ -1,0 +1,166 @@
+{
+  "name" : "MenuBag",
+  "type" : "COMPOSITEBAG",
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter MenuBag",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 2,
+    "name" : "HomeMenu",
+    "type" : "ENTITY",
+    "entityName" : "HomeMenu",
+    "entityUsage" : {
+      "type" : "ENUMVALUES",
+      "trackingId" : "5B4D7D45-8D86-45D8-A9B4-7A0A2B940901",
+      "name" : "HomeMenu",
+      "description" : null,
+      "multiValue" : false,
+      "fuzzyMatch" : true,
+      "promptForDisambiguation" : true,
+      "disambiguationPrompt" : "Please choose appropriate category",
+      "enumRangeSize" : null,
+      "errorMessage" : null,
+      "eventHandler" : null,
+      "multiLingual" : null,
+      "botPrompts" : [ {
+        "trackingId" : "7190F83F-0F1A-426E-9590-6E3A22AA9F8E",
+        "text" : "Choose topic"
+      } ],
+      "validationRules" : [ ],
+      "extensionType" : null,
+      "valueClass" : "oracle.cloud.bots.model.entity.metadata.StaticEntityValue"
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : true,
+    "promptForDisambiguation" : true,
+    "disambiguationPrompt" : "Please choose appropriate category",
+    "promptForValue" : "${TopMenu.value?matches('Home')}",
+    "prompts" : [ {
+      "text" : "Choose topic",
+      "sequenceNr" : null
+    } ],
+    "trackingId" : "67EF8ABB-7FDB-48FF-8FCE-C5DDD70B3846"
+  }, {
+    "sequenceNr" : 3,
+    "name" : "LearningMenu",
+    "type" : "ENTITY",
+    "entityName" : "LearningMenu",
+    "entityUsage" : {
+      "type" : "ENUMVALUES",
+      "trackingId" : "BE4F2EF4-C11B-4709-90B8-ED904D3A3D5D",
+      "name" : "LearningMenu",
+      "description" : null,
+      "multiValue" : false,
+      "fuzzyMatch" : true,
+      "promptForDisambiguation" : true,
+      "disambiguationPrompt" : "Please choose appropriate category",
+      "enumRangeSize" : null,
+      "errorMessage" : null,
+      "eventHandler" : null,
+      "multiLingual" : null,
+      "botPrompts" : [ {
+        "trackingId" : "E339FE8B-EFF1-46BC-9C05-094DCAA74EE2",
+        "text" : "Choose topic"
+      } ],
+      "validationRules" : [ ],
+      "extensionType" : null,
+      "valueClass" : "oracle.cloud.bots.model.entity.metadata.StaticEntityValue"
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : true,
+    "promptForDisambiguation" : true,
+    "disambiguationPrompt" : "Please choose appropriate category",
+    "promptForValue" : "${TopMenu.value?matches('Learning')}",
+    "prompts" : [ {
+      "text" : "Choose topic",
+      "sequenceNr" : null
+    } ],
+    "trackingId" : "91732408-9C42-41E5-B544-E5438A2D3155"
+  }, {
+    "sequenceNr" : 4,
+    "name" : "CafeSupremoMenu",
+    "type" : "ENTITY",
+    "entityName" : "CafeSupremoMenu",
+    "entityUsage" : {
+      "type" : "ENUMVALUES",
+      "trackingId" : "AB6DEDC2-35A2-4AFB-98A1-3AA2DDD4C337",
+      "name" : "CafeSupremoMenu",
+      "description" : null,
+      "multiValue" : false,
+      "fuzzyMatch" : true,
+      "promptForDisambiguation" : true,
+      "disambiguationPrompt" : "Please choose appropriate category",
+      "enumRangeSize" : null,
+      "errorMessage" : null,
+      "eventHandler" : null,
+      "multiLingual" : null,
+      "botPrompts" : [ {
+        "trackingId" : "42C45C7C-4CAE-44FD-BB87-3DA5E6BAC039",
+        "text" : "Choose topic"
+      } ],
+      "validationRules" : [ ],
+      "extensionType" : null,
+      "valueClass" : "oracle.cloud.bots.model.entity.metadata.StaticEntityValue"
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : true,
+    "promptForDisambiguation" : true,
+    "disambiguationPrompt" : "Please choose appropriate category",
+    "promptForValue" : "${TopMenu.value?matches('Cafe Supremo')}",
+    "prompts" : [ {
+      "text" : "Choose topic",
+      "sequenceNr" : null
+    } ],
+    "trackingId" : "88D8730E-4155-47E7-BCE4-5C61A7324D9F"
+  }, {
+    "sequenceNr" : 5,
+    "name" : "SellingMenu",
+    "type" : "ENTITY",
+    "entityName" : "SellingMenu",
+    "entityUsage" : {
+      "type" : "ENUMVALUES",
+      "trackingId" : "74306F37-FB6D-4268-BE97-3C8CECD698A1",
+      "name" : "SellingMenu",
+      "description" : null,
+      "multiValue" : false,
+      "fuzzyMatch" : true,
+      "promptForDisambiguation" : true,
+      "disambiguationPrompt" : "Please choose appropriate category",
+      "enumRangeSize" : null,
+      "errorMessage" : null,
+      "eventHandler" : null,
+      "multiLingual" : null,
+      "botPrompts" : [ {
+        "trackingId" : "E641FD75-583A-48D2-A545-CB48B196B66B",
+        "text" : "Choose topic"
+      } ],
+      "validationRules" : [ ],
+      "extensionType" : null,
+      "valueClass" : "oracle.cloud.bots.model.entity.metadata.StaticEntityValue"
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : true,
+    "promptForDisambiguation" : true,
+    "disambiguationPrompt" : "Please choose appropriate category",
+    "promptForValue" : "${TopMenu.value?matches('Selling')}",
+    "prompts" : [ {
+      "text" : "Choose topic",
+      "sequenceNr" : null
+    } ],
+    "trackingId" : "0AAEBE26-F015-42EA-8DAD-37F39F34EBBD"
+  } ],
+  "trackingId" : "9EE6E8F4-092E-40D0-8424-E70DEC4BB069"
+}

@@ -1,0 +1,47 @@
+{
+  "name" : "LearningMenu",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "trackingId" : "077C6E81-FB08-49BA-83FF-62E30F6DE7D4",
+    "canonicalName" : "Coffee Hours",
+    "synonyms" : [ "coffee hour", "cofee hour", "cofee hours", "coffe hour", "coffe hours" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Coffee Hours",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "963BCEEF-265F-473F-BE54-32FAE65DBC27",
+    "canonicalName" : "Trainings",
+    "synonyms" : [ "training" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Trainings",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "54028327-5417-4E60-8778-D3622910C8D6",
+    "canonicalName" : "Learning Videos",
+    "synonyms" : [ "learning video", "video", "videos" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Learning Videos",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "778DF26A-A4E9-496B-A2CF-5A0B87E9EAAE",
+    "canonicalName" : "Article & Blogs",
+    "synonyms" : [ "article and blogs", "articles and blogs", "articles and blog", "articles & blogs", "article & blog" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Article & Blogs",
+    "nativeLanguageTag" : "en"
+  } ],
+  "multiValue" : false,
+  "fuzzyMatch" : true,
+  "promptForDisambiguation" : true,
+  "disambiguationPrompt" : "Please choose appropriate category",
+  "botPrompts" : [ {
+    "text" : "Choose topic",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "trackingId" : "BE4F2EF4-C11B-4709-90B8-ED904D3A3D5D"
+}

@@ -1,0 +1,55 @@
+{
+  "name" : "SellingMenu",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "trackingId" : "C95ECE69-E92E-4EFB-AA56-2D2ECC076B4B",
+    "canonicalName" : "Selling Material",
+    "synonyms" : [ "selling materials", "seling material", "seling materials" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Selling Material",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "0F49E949-A7D9-437D-BEA6-2A0005E3F1A2",
+    "canonicalName" : "Cafe Sales Plays",
+    "synonyms" : [ "cafe sale play", "cafe sales play", "cafe sale plays", "sales plays" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Cafe Sales Plays",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "408CE481-0058-4875-99C4-32C12209000B",
+    "canonicalName" : "Setup a Cafe",
+    "synonyms" : [ "select a cafe", "budget a cafe" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Setup a Cafe",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "AAE73279-CDAB-4D9C-8189-2CDD32DF9943",
+    "canonicalName" : "Funding Solutions",
+    "synonyms" : [ "finance options" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Funding Solutions",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "D0908A72-4A46-4B0D-8B39-2A286D2F6042",
+    "canonicalName" : "Sales Trainings",
+    "synonyms" : [ "sales training", "sale training", "sales traing" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Sales Trainings",
+    "nativeLanguageTag" : "en"
+  } ],
+  "multiValue" : false,
+  "fuzzyMatch" : true,
+  "promptForDisambiguation" : true,
+  "disambiguationPrompt" : "Please choose appropriate category",
+  "botPrompts" : [ {
+    "text" : "Choose topic",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "trackingId" : "74306F37-FB6D-4268-BE97-3C8CECD698A1"
+}

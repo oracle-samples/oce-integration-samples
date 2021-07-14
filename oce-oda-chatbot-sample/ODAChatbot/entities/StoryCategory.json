@@ -1,0 +1,123 @@
+{
+  "name" : "StoryCategory",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "trackingId" : "213278B2-3AB7-4C0D-917E-FF6E48DD7390",
+    "canonicalName" : "Article & Blogs",
+    "synonyms" : [ "Articles and Blogs", "Article and Blog" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Article & Blogs",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "0B70EEED-B274-42C0-8057-78D472BA2320",
+    "canonicalName" : "Cafe Sales Plays",
+    "synonyms" : [ "cafe sale play", "cafe sales play", "cafe sale plays", "sales plays", "cafe ambience" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Cafe Sales Plays",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "9751DEE2-66A5-402B-A06F-A6F94A1B2704",
+    "canonicalName" : "Coffee Hours",
+    "synonyms" : [ "coffee hour", "cofee hour", "cofee hours", "coffe hour", "coffe hours", "free supremo", "signature coffee" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Coffee Hours",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "0DFEBF9F-4805-4956-93FC-FCD535869DF5",
+    "canonicalName" : "Coffee Machines",
+    "synonyms" : [ "coffee machine", "machines", "machine" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Coffee Machines",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "A851DB90-75A2-49CF-8FBA-601A0E401D1E",
+    "canonicalName" : "FAQs",
+    "synonyms" : [ "faq's", "frequently asked questions", "faq" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "FAQs",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "62DA7A86-7B31-4551-A69F-C65EC772F3AE",
+    "canonicalName" : "Fresh Arrivals",
+    "synonyms" : [ "fresh arrival", "fresh arival" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Fresh Arrivals",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "4C0D3C1E-4F45-4D1D-8E44-F8BAEA0E1753",
+    "canonicalName" : "Funding Solutions",
+    "synonyms" : [ "funding solution", "fuding solution", "finance options", "funding" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Funding Solutions",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "8AF96404-90DA-4C1C-AF0F-99920736300A",
+    "canonicalName" : "Learning Videos",
+    "synonyms" : [ "learning video", "videos", "video" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Learning Videos",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "CA77AB18-C79F-4EE3-8F20-96A0C82F95C3",
+    "canonicalName" : "Price a Combo",
+    "synonyms" : [ "price combo", "pricing a combo", "pricing combos", "combo" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Price a Combo",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "81146D0F-A664-44AF-9037-0F4F28D9EEBB",
+    "canonicalName" : "Selling Material",
+    "synonyms" : [ "selling materials", "seling material", "seling materials" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Selling Material",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "F7443102-99ED-4CF2-AE21-60094AF310CC",
+    "canonicalName" : "Setup a Cafe",
+    "synonyms" : [ "set up a cafe", "set up cafe", "setting up a cafe", "select a cafe" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Setup a Cafe",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "EE115175-7A08-481B-AF58-941E50CD62CE",
+    "canonicalName" : "Trainings",
+    "synonyms" : [ "training" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Trainings",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "F5035D23-C274-45A7-8719-9F8D2E6DAE42",
+    "canonicalName" : "Announcements",
+    "synonyms" : [ "announcement", "anouncement", "anouncements", "announcments", "announcemnts" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Announcements",
+    "nativeLanguageTag" : "en"
+  }, {
+    "type" : "StaticEntityValue",
+    "trackingId" : "054B1108-D804-4028-8D92-384E7905C6AB",
+    "canonicalName" : "Sales Trainings",
+    "synonyms" : [ "sales training", "sale training", "sales traing" ],
+    "extensionType" : null,
+    "primaryLanguageCanonicalName" : "Sales Trainings",
+    "nativeLanguageTag" : "en"
+  } ],
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : false,
+  "botPrompts" : [ ],
+  "validationRules" : [ ],
+  "trackingId" : "A0C93BD2-CC29-49CA-A8CF-4830FE8BA778"
+}

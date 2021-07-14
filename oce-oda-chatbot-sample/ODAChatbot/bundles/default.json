@@ -1,0 +1,491 @@
+{
+  "languageTag" : "default",
+  "keys" : {
+    "systemComponent_AgentInitiation_agentActionsMessage" : {
+      "message" : "\\n Here are the available actions that you can send to transfer the conversation back to the bot. Prepend the action with a forward slash (for example, /actionName).\\n",
+      "extensionType" : null,
+      "trackingId" : "321724C3-AF27-4D7B-B874-1DE1E7ACAED4",
+      "annotation" : "Message preceding the list of agent actions."
+    },
+    "systemComponent_IntelligentAdvisor_undoLabel" : {
+      "message" : "/back",
+      "extensionType" : null,
+      "trackingId" : "446AF995-135D-4F71-A0BF-F40B16AFD2B3",
+      "annotation" : "The text that users have to type to indicate that they want to go back to the previous question."
+    },
+    "systemComponent_KnowledgeSearch_resultLinkLabel" : {
+      "message" : "View Details",
+      "extensionType" : null,
+      "trackingId" : "C7A0A8C8-ED00-4F16-A30A-9EA0FB64D2D1",
+      "annotation" : "The label to use for the result card's URL action that's linked to the web version of the knowledge article."
+    },
+    "systemConfiguration_oauthCancelPrompt" : {
+      "message" : "Authentication canceled.",
+      "extensionType" : null,
+      "trackingId" : "78C9B8C8-22A7-421F-A24C-7189B224B2E0",
+      "annotation" : "The message when OAuth authorization is canceled."
+    },
+    "systemComponent_IntelligentAdvisor_outOfOrderMessage" : {
+      "message" : "You have already answered this question. When you want to step backwards to change a previous answer, say {0}.",
+      "extensionType" : null,
+      "trackingId" : "93EF7AAC-E278-4A57-ACFA-479F57B11CFE",
+      "annotation" : "Error message that's displayed when the user taps a button in a previous Intelligent Advisor interview message."
+    },
+    "more.message" : {
+      "message" : "More results for {0}",
+      "extensionType" : null,
+      "trackingId" : "A2C14ABD-B328-432B-9C93-DB72C8498FF0",
+      "annotation" : null
+    },
+    "systemComponent_QnA_exitLabel" : {
+      "message" : "Exit Questions",
+      "extensionType" : null,
+      "trackingId" : "5C38F842-946F-4AD7-B070-C274FE0FE2E3",
+      "annotation" : "The label for the exit questions action."
+    },
+    "systemComponent_AgentConversation_userLeftMessage" : {
+      "message" : "User left the chat.",
+      "extensionType" : null,
+      "trackingId" : "92868DFA-C9A2-43B7-A06D-0ED52A9A81D8",
+      "annotation" : null
+    },
+    "systemComponent_SelectCalendarEvent_prompt" : {
+      "message" : "You have the following meeting(s):",
+      "extensionType" : null,
+      "trackingId" : "4A67C104-0F7E-44C3-B3B5-624AB49D6F2B",
+      "annotation" : "The text that appears before the list of meeting."
+    },
+    "systemComponent_AgentTransfer_rejectedMessage" : {
+      "message" : "Agent rejected.",
+      "extensionType" : null,
+      "trackingId" : "5728142F-FA0D-46ED-96D9-E02C0A46FA0F",
+      "annotation" : "The message that's shown to the users whenever a human agent rejects the chat request, 'maxEngagementsInQueue' is exceeded, the 'allowTransferIf' condition is not met, or the estimated wait time exceeds 'maxWaitSeconds'."
+    },
+    "systemComponent_Webview_linkLabel" : {
+      "message" : "Tap to continue",
+      "extensionType" : null,
+      "trackingId" : "132B09B6-0C7D-45BC-8FB0-7A81CAE93187",
+      "annotation" : "The label of the button to invoke the webview."
+    },
+    "systemComponent_OAuth2AccountLink_linkLabel" : {
+      "message" : "Get an access token",
+      "extensionType" : null,
+      "trackingId" : "0C96170C-5E21-4F5C-B810-164067191F78",
+      "annotation" : "The label for the button that invokes the authentication dialog."
+    },
+    "systemComponent_QnA_moreAnswersLabel" : {
+      "message" : "More Answers",
+      "extensionType" : null,
+      "trackingId" : "A677D11C-76D1-4E02-9B77-AD6F689EE72D",
+      "annotation" : "The label for the action to paginate to next set of answers."
+    },
+    "systemComponent_OAuthAccountLink_prompt" : {
+      "message" : "Please tap on the link to proceed",
+      "extensionType" : null,
+      "trackingId" : "12CAF613-5B6C-4BA2-A7FF-1BF9B88D61E5",
+      "annotation" : "The message that tells users to sign in now."
+    },
+    "systemComponent_Intent_optionsPrompt" : {
+      "message" : "Do you want to",
+      "extensionType" : null,
+      "trackingId" : "E420FF4C-0A9F-4D1D-8858-4D8268239938",
+      "annotation" : "The prompt shown to the user when there are multiple top intents within the confidence win margin."
+    },
+    "systemComponent_AgentInitiation_resumedMessage" : {
+      "message" : "Resuming chat with agent",
+      "extensionType" : null,
+      "trackingId" : "5A4777CE-A3CA-4768-8106-7C5713193C39",
+      "annotation" : "The message shown to the user when the chat with human agent is resumed."
+    },
+    "systemComponent_OAuthAccountLink_linkLabel" : {
+      "message" : "Log In",
+      "extensionType" : null,
+      "trackingId" : "93F23BD8-CE93-44EF-B981-4B68C8375A5A",
+      "annotation" : "The label for the button that invokes the authentication dialog."
+    },
+    "unresolved.message" : {
+      "message" : "I don't understand. What do you want to do?",
+      "extensionType" : null,
+      "trackingId" : "66C66E7D-C0CE-417F-B65C-E35DD4B4DCA0",
+      "annotation" : null
+    },
+    "prompt.invalidInput" : {
+      "message" : "Sorry, I didn't get that. Can you please say that again?",
+      "extensionType" : null,
+      "trackingId" : "79326C0C-DBA9-4802-AAD6-2073B0F8696E",
+      "annotation" : null
+    },
+    "submenu.message" : {
+      "message" : "Showing categories from {0} menu",
+      "extensionType" : null,
+      "trackingId" : "A66A3589-77A2-40E2-9A45-E7A01F04108B",
+      "annotation" : null
+    },
+    "systemComponent_AgentInitiation_errorMessage" : {
+      "message" : "Error transferring to agent. The reason is: {0}.",
+      "extensionType" : null,
+      "trackingId" : "C253182F-206C-45C2-818E-97BC2316C692",
+      "annotation" : "The message shown to user when system error occurs during chat initiation with agent."
+    },
+    "label.showMore" : {
+      "message" : "Show More",
+      "extensionType" : null,
+      "trackingId" : "5D45BF31-FB93-4639-B772-A2629F9C87FD",
+      "annotation" : null
+    },
+    "systemFlowName_Greeting" : {
+      "message" : "Help",
+      "extensionType" : null,
+      "trackingId" : "81D9B636-B58C-4406-AB84-127D11B59028",
+      "annotation" : null
+    },
+    "systemComponent_IntelligentAdvisor_maskLabel" : {
+      "message" : "Answer format: {0}",
+      "extensionType" : null,
+      "trackingId" : "3720873A-BD6F-4CCD-A5DD-57E31777849E",
+      "annotation" : "Text that's added to a question to display the expected format for Intelligent Advisor interview inputs of type Masked Text Box."
+    },
+    "systemComponent_AgentConversation_waitExpiryMessage" : {
+      "message" : "The request for live chat expired while waiting for an agent.",
+      "extensionType" : null,
+      "trackingId" : "84893B53-56D8-42DA-A044-051EDC513698",
+      "annotation" : "The message shown to the user when the chat expires while waiting for an agent."
+    },
+    "systemComponent_AgentConversation_errorMessage" : {
+      "message" : "Chat session error. The reason is: {0}.",
+      "extensionType" : null,
+      "trackingId" : "61DC9C1B-ACE0-4DC4-90EB-F9000E114AF5",
+      "annotation" : "The message shown to the user when Digital Assistant experiences errors with the agent chat system."
+    },
+    "systemComponent_AgentTransfer_errorMessage" : {
+      "message" : "We were unable to transfer you to another agent because there was a system error.",
+      "extensionType" : null,
+      "trackingId" : "6BBE1ABB-65BB-422F-B32F-BCF26049C0E4",
+      "annotation" : "The message shown to the user when Digital Assistant experiences trouble with the agent chat system."
+    },
+    "systemAnswer_Greeting" : {
+      "message" : "Hi there, how are you?<br>\nI can help you with finding stories.<br>\nTry one of the followings:<br>\n- 'show main menu' to see the entire menu<br>\n- directly tell me which menu or story you are looking for",
+      "extensionType" : null,
+      "trackingId" : "FBC1839F-71F0-4202-AA6E-6BE8862552F0",
+      "annotation" : null
+    },
+    "systemComponent_IntelligentAdvisor_doneLabel" : {
+      "message" : "/done",
+      "extensionType" : null,
+      "trackingId" : "2D8A9ACA-118A-43EA-82BC-D0966B44B417",
+      "annotation" : "The text that users have to type to indicate that they are done uploading a file."
+    },
+    "systemComponent_IntelligentAdvisor_endLabel" : {
+      "message" : "Interview ended",
+      "extensionType" : null,
+      "trackingId" : "E823133C-3FD9-48A8-B352-CB2400AAFDA2",
+      "annotation" : "The label that is shown in the chat at the end of the interview."
+    },
+    "systemComponent_ResolveEntities_defaultDisambiguationPrompt" : {
+      "message" : "Please select one value for {0}",
+      "extensionType" : null,
+      "trackingId" : "2379148F-7D42-4C90-A456-0317C57532C0",
+      "annotation" : "Default message shown when the user entered ambiguous input causing multiple entity matches."
+    },
+    "prompt.submenu" : {
+      "message" : "What are you looking for?",
+      "extensionType" : null,
+      "trackingId" : "B5D819D8-F946-4907-BF56-B7EA7E474455",
+      "annotation" : null
+    },
+    "systemComponent_AgentConversation_conclusionMessage" : {
+      "message" : "Chat session ended. Thanks for chatting with us.",
+      "extensionType" : null,
+      "trackingId" : "7DD032EB-1B41-439C-90D9-4AB43EC8C0AF",
+      "annotation" : "The message shown to the user when human agent ends the chat."
+    },
+    "systemComponent_QnA_categoriesLabel" : {
+      "message" : "Categories",
+      "extensionType" : null,
+      "trackingId" : "2DF6F3D4-819F-4B2F-A889-5928BEEF6CBB",
+      "annotation" : "The label for the action to display the categories that match the user utterance."
+    },
+    "systemComponent_ResolveEntities_showPreviousLabel" : {
+      "message" : "Show Previous",
+      "extensionType" : null,
+      "trackingId" : "18BA0376-BC3A-4329-8238-DF4F09F4B0FD",
+      "annotation" : "The label used for the backward pagination button when the number of enumeration values, or disambiguation matches exceeds the 'Enumeration Range Size' property of the composite bag item."
+    },
+    "systemComponent_ResolveEntities_showMoreLabel" : {
+      "message" : "Show More",
+      "extensionType" : null,
+      "trackingId" : "95DCDDBD-33F4-466C-8E92-0B9957359A88",
+      "annotation" : "The label used for the forward pagination button when the number of enumeration values, or disambiguation matches exceeds the 'Enumeration Range Size' property of the composite bag item."
+    },
+    "systemComponent_IntelligentAdvisor_defaultValue" : {
+      "message" : "Suggested value is {0}.",
+      "extensionType" : null,
+      "trackingId" : "A34435A6-52A7-43C5-9708-FEC81E1A3CC3",
+      "annotation" : "Text that's added to a question when the Intelligent Advisor interview input has a default value."
+    },
+    "systemComponent_Intent_optionsQnaLabel" : {
+      "message" : "View Answers",
+      "extensionType" : null,
+      "trackingId" : "9A2B1AC2-0B9C-4081-82A3-1025A8D357B4",
+      "annotation" : "The label of the action in the options (see optionsPrompt) that will take the user to the QnA component to display the matches."
+    },
+    "systemComponent_AgentTransfer_waitingMessage" : {
+      "message" : "Agent chat session established, Waiting for agent to join.",
+      "extensionType" : null,
+      "trackingId" : "B28B6727-A8D5-4829-AF97-D4F6FBB47107",
+      "annotation" : "The message that's shown to users when they're transferred to a human agent."
+    },
+    "systemComponent_AgentTransfer_acceptedMessage" : {
+      "message" : "The chat has been transferred to another agent.",
+      "extensionType" : null,
+      "trackingId" : "3A8B02CC-1ABE-4868-9BE0-A4330098D8BC",
+      "annotation" : "The message that's shown to the users whenever a human agent accepts the chat request."
+    },
+    "systemComponent_OAuth2AccountLink_prompt" : {
+      "message" : "Please sign in",
+      "extensionType" : null,
+      "trackingId" : "33CAC205-2A6F-468F-860B-6FB9AD34B901",
+      "annotation" : "The message that tells users to sign in now."
+    },
+    "default.message" : {
+      "message" : "Ask me anything",
+      "extensionType" : null,
+      "trackingId" : "F2AB8BC4-9B03-4A5C-A054-B50C5A208F50",
+      "annotation" : null
+    },
+    "systemComponent_QnA_moreCategoriesLabel" : {
+      "message" : "More Categories",
+      "extensionType" : null,
+      "trackingId" : "632F2EDE-9F27-4443-B4F9-E18807BB8CD4",
+      "annotation" : "The label for the action to paginate to next set of categories."
+    },
+    "systemComponent_IntelligentAdvisor_explanationAskLabel" : {
+      "message" : "Do you want to see the explanation?",
+      "extensionType" : null,
+      "trackingId" : "233CCDB8-A0C7-4FDE-A9F0-BCC89A431F32",
+      "annotation" : "The question that is asked when showExplanation is set to 'ask'."
+    },
+    "systemConfiguration_oauthSuccessPrompt" : {
+      "message" : "Authentication successful! You can return to the conversation.",
+      "extensionType" : null,
+      "trackingId" : "FF1A900D-983B-4730-9A7A-D0379519A85F",
+      "annotation" : "The message when OAuth authorization succeeds."
+    },
+    "systemComponent_IntelligentAdvisor_yesNoMessage" : {
+      "message" : "Enter either {0} or {1}",
+      "extensionType" : null,
+      "trackingId" : "39107636-8897-4AEB-A8FA-8BBEDBBA470E",
+      "annotation" : "Message that's displayed when the user enters an invalid answer for Intelligent Advisor interview inputs of type Boolean Radio Button."
+    },
+    "label.findSomethingElse" : {
+      "message" : "Find Something Else",
+      "extensionType" : null,
+      "trackingId" : "C0A4CB4B-1392-46D2-ACD4-A06D2D135587",
+      "annotation" : null
+    },
+    "waitState.message" : {
+      "message" : "Hang on let me retrieve stories from category: {0}...",
+      "extensionType" : null,
+      "trackingId" : "CAE5FAFA-DE83-4F6F-B81D-8E82B4D899DC",
+      "annotation" : null
+    },
+    "systemComponent_IntelligentAdvisor_exitLabel" : {
+      "message" : "/exit",
+      "extensionType" : null,
+      "trackingId" : "F4CD6069-180D-4BD1-90DA-9B306D453BA7",
+      "annotation" : "The text that users have to type to indicate that they want to exit the interview."
+    },
+    "systemComponent_IntelligentAdvisor_uncertainLabel" : {
+      "message" : "Uncertain",
+      "extensionType" : null,
+      "trackingId" : "2BA92363-04C5-4562-99D3-C3DE703EF1DD",
+      "annotation" : "The label that appears for optional values and is what the user can type if they don't know the value."
+    },
+    "InvalidInputPrompt" : {
+      "message" : "Sorry, I didn't get that. Can you please say that again?",
+      "extensionType" : null,
+      "trackingId" : "E0C13108-14B7-4456-8247-DB71CB5E816E",
+      "annotation" : null
+    },
+    "prompt.intent" : {
+      "message" : "I am confused. Where shall I take you?",
+      "extensionType" : null,
+      "trackingId" : "63729B8F-2B4E-4C4D-9D06-69129485F7F1",
+      "annotation" : null
+    },
+    "systemComponent_Webview_cancelLabel" : {
+      "message" : "Cancel",
+      "extensionType" : null,
+      "trackingId" : "E0571057-598E-4DF7-A280-3A08B83C7945",
+      "annotation" : "The label of the cancel button to leave this state without invoking the webview."
+    },
+    "systemComponent_IntelligentAdvisor_numberMinMax" : {
+      "message" : "Enter a number between {0} and {1}.",
+      "extensionType" : null,
+      "trackingId" : "223875A0-C161-4788-BB44-43DFE8746054",
+      "annotation" : "Message that's displayed when the user enters a value outside of the specified range for an Intelligent Advisor interview input of type Slider."
+    },
+    "systemComponent_AgentConversation_exitKeywords" : {
+      "message" : "bye, take care, see you, goodbye",
+      "extensionType" : null,
+      "trackingId" : "9F210254-44F5-4DC1-8594-30799F90E966",
+      "annotation" : "Comma-delimited list of keywords the user can use to end the chat with the agent."
+    },
+    "systemComponent_IntelligentAdvisor_resumeSessionPrompt" : {
+      "message" : "Do you want to restart the interview from where you previously left?",
+      "extensionType" : null,
+      "trackingId" : "8B4C71C3-37B1-4C5E-9AD9-300424D67066",
+      "annotation" : "Question that is asked if the user starts an interview that they had previously left before the interview completed."
+    },
+    "systemConfiguration_errorExpiredSessionPrompt" : {
+      "message" : "Your session has expired.  Please start again.",
+      "extensionType" : null,
+      "trackingId" : "C65E0C77-B1EB-472F-AE59-95D4E006E9A0",
+      "annotation" : "The message when the session has expired."
+    },
+    "systemComponent_IntelligentAdvisor_doneHelp" : {
+      "message" : "When you are done with the upload, say {0}.",
+      "extensionType" : null,
+      "trackingId" : "9CFF1486-7E4B-4B71-990F-F703375C8479",
+      "annotation" : "Help message that's displayed for Intelligent Advisor interview inputs of type Upload."
+    },
+    "systemComponent_KnowledgeSearch_defaultAttachmentLabel" : {
+      "message" : "Download",
+      "extensionType" : null,
+      "trackingId" : "D4D68EDF-20F2-49A1-ABC3-559EF6F2DB45",
+      "annotation" : "The default label to use for the result card's URL action that is linked with an attachment of the search result if that attachment does not have a display name configured already."
+    },
+    "systemComponent_AgentInitiation_rejectedMessage" : {
+      "message" : "Agent rejected.",
+      "extensionType" : null,
+      "trackingId" : "C6E895A0-9B20-41AA-91BB-52BEB8274642",
+      "annotation" : "The message shown to the user when human agent rejects the chat request."
+    },
+    "systemComponent_ResolveEntities_defaultPrompt" : {
+      "message" : "Please enter {0}",
+      "extensionType" : null,
+      "trackingId" : "136B239F-A959-46E2-87D5-CF2545CBC4A4",
+      "annotation" : "Default message shown to prompt the user for input."
+    },
+    "systemComponent_IntelligentAdvisor_noLabel" : {
+      "message" : "No",
+      "extensionType" : null,
+      "trackingId" : "3AF1E027-7AFB-4C30-A917-8C496D9C382C",
+      "annotation" : "The label to use to represent Boolean FALSE values."
+    },
+    "systemComponent_QnA_answersLabel" : {
+      "message" : "Answers",
+      "extensionType" : null,
+      "trackingId" : "CB3D1D50-C169-4D01-878E-8BC747B17E7C",
+      "annotation" : "The label for the action to view answers in a particular category."
+    },
+    "systemConfiguration_internalWelcomeMessage" : {
+      "message" : "help",
+      "extensionType" : null,
+      "trackingId" : "E2F7140B-95CA-4E72-8818-CA30BFDF66F0",
+      "annotation" : "The internal message sent to the skill when a channel handles the event that a new user has gotten access to the skill. The reply to the internal message is sent as welcome message to the new user."
+    },
+    "systemComponent_IntelligentAdvisor_answerNotValid" : {
+      "message" : "The answer is not in the correct format. Try again.",
+      "extensionType" : null,
+      "trackingId" : "BEAA23AE-66E0-4D8D-8466-A159A91653D5",
+      "annotation" : "Message that's displayed for Intelligent Advisor interview inputs of type Masked when the user's answer doesn't conform to the specified input mask."
+    },
+    "systemComponent_Webview_prompt" : {
+      "message" : "Please tap on the link to proceed",
+      "extensionType" : null,
+      "trackingId" : "80D70054-EB7E-4CEF-8A68-9F650B9B9CEB",
+      "annotation" : "The message for the user to tap on the link to invoke the webview."
+    },
+    "systemComponent_AgentConversation_expiryMessage" : {
+      "message" : "Chat session expired. Thanks for chatting with us.",
+      "extensionType" : null,
+      "trackingId" : "67C01C84-DE06-42E6-8E98-FE2D4833FC9C",
+      "annotation" : "The message shown to the user when the chat session expires."
+    },
+    "systemComponent_AgentInitiation_waitingMessage" : {
+      "message" : "Agent chat session established, Waiting for agent to join.",
+      "extensionType" : null,
+      "trackingId" : "055A75F2-BB71-47CB-A238-7FE26EB9A036",
+      "annotation" : "The message that's shown to users when they are waiting for a human agent."
+    },
+    "systemComponent_KnowledgeSearch_noResultText" : {
+      "message" : "Sorry, no result was found in the knowledge search.",
+      "extensionType" : null,
+      "trackingId" : "6ECB64CD-DA42-40A0-BA8B-C7B79213432E",
+      "annotation" : "The text to output when no search result is available."
+    },
+    "systemComponent_OAuthAccountLink_cancelLabel" : {
+      "message" : "Cancel",
+      "extensionType" : null,
+      "trackingId" : "26A07CCF-8C13-4CD2-A18F-62782A68799D",
+      "annotation" : "The label for the cancel button that lets users leave the state without invoking the authentication dialog."
+    },
+    "systemFlowName_StoryIntent" : {
+      "message" : "Main Menu",
+      "extensionType" : null,
+      "trackingId" : "644DE3EF-486F-4C3D-89D5-15CD3F524EA0",
+      "annotation" : null
+    },
+    "systemComponent_IntelligentAdvisor_yesLabel" : {
+      "message" : "Yes",
+      "extensionType" : null,
+      "trackingId" : "D34306F1-3379-45DE-A707-699160E60A5A",
+      "annotation" : "The label to use to represent Boolean TRUE values."
+    },
+    "systemConfiguration_errorMaxStatesExceededPrompt" : {
+      "message" : "Your session appears to be in an infinite loop.",
+      "extensionType" : null,
+      "trackingId" : "3B741C02-B505-4173-9E18-0D95B901EEFB",
+      "annotation" : "The message when the bot appears to be in an infinite loop."
+    },
+    "systemConfiguration_errorUnexpectedErrorPrompt" : {
+      "message" : "Oops I'm encountering a spot of trouble. Please try again later...",
+      "extensionType" : null,
+      "trackingId" : "5908A345-90E4-4FDB-9872-DB61DBCE903D",
+      "annotation" : "The message when there is an unexpected error."
+    },
+    "prompt.topMenu" : {
+      "message" : "What can I help you with?",
+      "extensionType" : null,
+      "trackingId" : "5E5A9AE0-984A-460B-B02E-CF35F40F6814",
+      "annotation" : null
+    },
+    "systemComponent_QnA_subCategoriesLabel" : {
+      "message" : "Sub-Categories",
+      "extensionType" : null,
+      "trackingId" : "0751AFB7-31D2-4FEC-BF02-ABA4FAD56EA3",
+      "annotation" : "The label for the action to display sub-categories within a given category."
+    },
+    "systemComponent_QnA_viewAnswerLabel" : {
+      "message" : "View",
+      "extensionType" : null,
+      "trackingId" : "C9D497FB-379C-42A4-A709-A5F6643578E6",
+      "annotation" : "The label for the action to view answer details."
+    },
+    "noStoriesFound.message" : {
+      "message" : "Sorry, I'm facing some issue in fetching the content.",
+      "extensionType" : null,
+      "trackingId" : "5349F3CE-98D2-46E2-9C7A-0E1AF038E294",
+      "annotation" : null
+    },
+    "systemComponent_OAuth2AccountLink_cancelLabel" : {
+      "message" : "Cancel",
+      "extensionType" : null,
+      "trackingId" : "76557CDC-D8C6-423A-A2BB-6879645EE44A",
+      "annotation" : "The label for the cancel button that lets users leave the state without invoking the authentication dialog."
+    },
+    "successState.message" : {
+      "message" : "<div class='SE2-Story-readNext' title={0}><div class='contentWrapper'> {1} <div class={2}><div class='AuthorTitle'><div class='font14 font14-2LineEllipsis Title'> {0} </div><div class='font12 Author'><span class='font16-1LineEllipsis'> {3} </span><span class='Date'> {4} </span></div></div><div class='font12 font12-2LineEllipsis Summary'> {5} </div> </div></div></div>",
+      "extensionType" : null,
+      "trackingId" : "3B0C3F89-B79F-4BBD-A399-A71C7D2893A4",
+      "annotation" : null
+    },
+    "systemComponent_IntelligentAdvisor_resetLabel" : {
+      "message" : "/reset",
+      "extensionType" : null,
+      "trackingId" : "75AF504B-BB3B-468E-A277-7FC4CD85E5CE",
+      "annotation" : "The text that users have to type to indicate that they want to go back to the first question."
+    }
+  }
+}
