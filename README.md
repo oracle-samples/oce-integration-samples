@@ -2,7 +2,7 @@
 
 This repository holds a collection of samples that surface content from [Oracle Content Managment](https://docs.oracle.com/en/cloud/paas/content-cloud/headless-cms.html):
 
-- [Oracle Digital Assitant Chatbot Sample](./oce-oda-chatbot-sample/README.md)
+- [Oracle Digital Assistant Chatbot Sample](./oce-oda-chatbot-sample/README.md)
 - [Visual Builder Marketing Site Sample](./oce-vb-marketing-site-sample/README.md)
 - [Visual Builder Image Gallery Sample](./oce-vb-image-gallery-sample/README.md)
 
