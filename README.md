@@ -13,6 +13,9 @@ Additional samples are available in their dedicated repositories:
 - [oce-gatsby-minimal-sample](https://github.com/oracle/oce-gatsby-minimal-sample)
 - [oce-javascript-blog-sample](https://github.com/oracle/oce-javascript-blog-sample)
 - [oce-jet-blog-sample](https://github.com/oracle/oce-jet-blog-sample)
+- [oce-nextjs-blog-sample](https://github.com/oracle/oce-nextjs-blog-sample)
+- [oce-nextjs-gallery-sample](https://github.com/oracle/oce-nextjs-gallery-sample)
+- [oce-nextjs-minimal-sample](https://github.com/oracle/oce-nextjs-minimal-sample)
 - [oce-react-blog-sample](https://github.com/oracle/oce-react-blog-sample)
 - [oce-react-gallery-sample](https://github.com/oracle/oce-react-gallery-sample)
 - [oce-react-minimal-sample](https://github.com/oracle/oce-react-minimal-sample)
@@ -32,7 +35,7 @@ vulnerability disclosure process.
 
 ## License
 
-Copyright (c) 2021 Oracle and/or its affiliates.
+Copyright (c) 2021, Oracle and/or its affiliates.
 
 Released under the Universal Permissive License v1.0 as shown at
 <https://oss.oracle.com/licenses/upl/>.
