@@ -8,6 +8,9 @@ This repository holds a collection of samples that surface content from [Oracle 
 
 Additional samples are available in their dedicated repositories:
 
+- [oce-angular-blog-sample](https://github.com/oracle/oce-angular-blog-sample)
+- [oce-angular-gallery-sample](https://github.com/oracle/oce-angular-gallery-sample)
+- [oce-angular-minimal-sample](https://github.com/oracle/oce-angular-minimal-sample)
 - [oce-gatsby-blog-sample](https://github.com/oracle/oce-gatsby-blog-sample)
 - [oce-gatsby-gallery-sample](https://github.com/oracle/oce-gatsby-gallery-sample)
 - [oce-gatsby-minimal-sample](https://github.com/oracle/oce-gatsby-minimal-sample)
