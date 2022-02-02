@@ -1,0 +1,15 @@
+{
+  "type" : "USER",
+  "trackingId" : "E038AC2C-01EC-4F58-9570-E01AAE7EEEF5",
+  "name" : "SalesEnablementChatbotIntegration",
+  "displayName" : "Sales Enablement Chatbot Integration",
+  "description" : "This Skill is a part of the Sales Enablement ODA Chatbot Integration Sample.",
+  "version" : "1.0",
+  "intentTrainer" : "Sakura",
+  "autoCompleteTrainingStatus" : "NO_DATA",
+  "requiresAutoCompleteTraining" : false,
+  "platformVersion" : "21.12",
+  "dialogVersion" : "1.0",
+  "primaryLanguageTag" : "en",
+  "multilingualMode" : "NATIVE"
+}

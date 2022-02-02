@@ -1,0 +1,54 @@
+{
+  "botPrompts" : [ {
+    "text" : "Choose topic"
+  } ],
+  "disambiguationPrompt" : "Please choose appropriate category",
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Selling Material",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Selling Material",
+    "synonyms" : [ "selling materials", "seling material", "seling materials" ],
+    "trackingId" : "434E76AA-3322-40EE-AB5A-66DEC873A3A1"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Cafe Sales Plays",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Cafe Sales Plays",
+    "synonyms" : [ "cafe sale play", "cafe sales play", "cafe sale plays", "sales plays" ],
+    "trackingId" : "48B86373-170C-4DBB-91F5-7CB431F12F7B"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Setup a Cafe",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Setup a Cafe",
+    "synonyms" : [ "select a cafe", "budget a cafe" ],
+    "trackingId" : "7818743E-0609-4B54-B1CF-DCAB2144188D"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Funding Solutions",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Funding Solutions",
+    "synonyms" : [ "finance options" ],
+    "trackingId" : "4397F042-D66A-48DC-9BA1-220580ED8619"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Sales Trainings",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Sales Trainings",
+    "synonyms" : [ "sales training", "sale training", "sales traing" ],
+    "trackingId" : "937CA712-0FF0-40C3-A242-C3BB20226829"
+  } ],
+  "fuzzyMatch" : true,
+  "multiValue" : false,
+  "name" : "SellingMenu",
+  "promptForDisambiguation" : true,
+  "trackingId" : "74306F37-FB6D-4268-BE97-3C8CECD698A1",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

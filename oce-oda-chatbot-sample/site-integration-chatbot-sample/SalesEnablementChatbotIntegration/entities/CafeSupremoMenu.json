@@ -1,0 +1,38 @@
+{
+  "botPrompts" : [ {
+    "text" : "Choose topic"
+  } ],
+  "disambiguationPrompt" : "Please choose appropriate category",
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Coffee Hours",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Coffee Hours",
+    "synonyms" : [ "free supremo", "signature coffee" ],
+    "trackingId" : "1628D7DC-0577-4916-9928-4F2973DB63B5"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Cafe Sales Plays",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Cafe Sales Plays",
+    "synonyms" : [ "cafe ambience" ],
+    "trackingId" : "4DCA237B-0142-4B40-B382-4925B20AC5BC"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Fresh Arrivals",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Fresh Arrivals",
+    "synonyms" : [ "fresh arrival", "fresh arival" ],
+    "trackingId" : "FF5D97DF-3C45-4163-A670-A46CDAD02C95"
+  } ],
+  "fuzzyMatch" : true,
+  "multiValue" : false,
+  "name" : "CafeSupremoMenu",
+  "promptForDisambiguation" : true,
+  "trackingId" : "AB6DEDC2-35A2-4AFB-98A1-3AA2DDD4C337",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

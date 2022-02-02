@@ -1,0 +1,105 @@
+{
+  "botPrompts" : [ {
+    "text" : "Please enter MenuBag"
+  } ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 2,
+    "name" : "HomeMenu",
+    "type" : "ENTITY",
+    "entityName" : "HomeMenu",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "HomeMenu",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : true,
+    "promptForDisambiguation" : true,
+    "disambiguationPrompt" : "Please choose appropriate category",
+    "promptForValue" : "${TopMenu.value?matches('Home')}",
+    "prompts" : [ {
+      "text" : "Choose topic"
+    } ],
+    "trackingId" : "F965786B-A7FD-43F7-85A0-D53789E0595F"
+  }, {
+    "sequenceNr" : 3,
+    "name" : "LearningMenu",
+    "type" : "ENTITY",
+    "entityName" : "LearningMenu",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "LearningMenu",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : true,
+    "promptForDisambiguation" : true,
+    "disambiguationPrompt" : "Please choose appropriate category",
+    "promptForValue" : "${TopMenu.value?matches('Learning')}",
+    "prompts" : [ {
+      "text" : "Choose topic"
+    } ],
+    "trackingId" : "994B447E-294D-42CB-95D6-605C5FDD4831"
+  }, {
+    "sequenceNr" : 4,
+    "name" : "CafeSupremoMenu",
+    "type" : "ENTITY",
+    "entityName" : "CafeSupremoMenu",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "CafeSupremoMenu",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : true,
+    "promptForDisambiguation" : true,
+    "disambiguationPrompt" : "Please choose appropriate category",
+    "promptForValue" : "${TopMenu.value?matches('Cafe Supremo')}",
+    "prompts" : [ {
+      "text" : "Choose topic"
+    } ],
+    "trackingId" : "4310EA99-FEE1-4B52-B215-3A51E8490410"
+  }, {
+    "sequenceNr" : 5,
+    "name" : "SellingMenu",
+    "type" : "ENTITY",
+    "entityName" : "SellingMenu",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "SellingMenu",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : true,
+    "promptForDisambiguation" : true,
+    "disambiguationPrompt" : "Please choose appropriate category",
+    "promptForValue" : "${TopMenu.value?matches('Selling')}",
+    "prompts" : [ {
+      "text" : "Choose topic"
+    } ],
+    "trackingId" : "335796E4-BF20-408B-8946-2FA26A02F323"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "MenuBag",
+  "promptForDisambiguation" : true,
+  "trackingId" : "9EE6E8F4-092E-40D0-8424-E70DEC4BB069",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

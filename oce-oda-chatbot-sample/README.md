@@ -1,32 +1,51 @@
 # About the Oracle Content Management Chatbot Sample
 
-This repository holds the sample source code for an Oracle Digital Assistant chatbot powered by Oracle Content Management.
+This sample demonstrates how to implement an Oracle Digital Assistant (ODA) chatbot which uses Oracle Content Management (OCM) as a headless CMS. It also demonstrates how to integrate an ODA chatbot with a website built using OCM site builder.
 
-> **NOTE:** The __ODAChatbot__ and __sales-enablement-custom-component__ folders are for developers following instructions in the tutorial where some code must be modified before it can be run.
+This repository holds the sample source code for Oracle Digital Assistant chatbot samples powered by Oracle Content Management.
 
-> **NOTE:** The __site-integration__  folder contains files for developers who want to integrate the chatbot with the Sales Enablement Site using Oracle Content Management site builder.
+- [Headless ODA Chatbot Sample](./headless-chatbot-sample/README.md) - It is for developers who want to implement a headless chatbot which uses content from an OCM repository.
+- [Site Integration Chatbot Sample](./site-integration-chatbot-sample/README.md) - It is for developers who want to implement and integrate the chatbot with the Sales Enablement Site using OCM site builder.
 
-## Running the project
+## Structure
 
-To run the chatbot application in a local browser:
+```text
+.
+├── headless-chatbot-sample
+│   ├── ODAChatbot
+│   ├── sales-enablement-custom-component
+│   └── WebApp
+│
+└── site-integration-chatbot-sample
+    ├── oda-custom-component
+    ├── SalesEnablementChatbotIntegration
+    └── SE2-ODA-Chatbot
+```
 
-1. Download the Oracle Web SDK 20.8.2 or later and unzip into a folder of your choice. You can download this SDK from your Digital Assistant instance by opening the side menu and then clicking Downloads or directly from this [page](https://www.oracle.com/downloads/cloud/amce-downloads.html).
-2. Copy __native-client-sdk-js/web-sdk.js__ file from your Oracle Web SDK folder and put it in the __WebApp/scripts__ folder.
-3. Open the __WebApp/index.html__ file in a browser
+| Directory Name | Description |
+|--|--|
+| `headless-chatbot-sample` | Directory containing source code for headless chatbot sample |
+| `ODAChatbot` | ODA skill used for headless chatbot |
+| `sales-enablement-custom-component` | ODA custom component used in ODA skill to fetch content from OCM |
+| `WebApp` | A simple web application used for hosting the headless chatbot |
+| `site-integration-chatbot-sample` | Directory containing source code for site integration chatbot sample |
+| `oda-custom-component` | ODA custom component used in ODA skill to fetch content from OCM |
+| `SalesEnablementChatbotIntegration` | ODA skill used for site integration chatbot sample |
+| `SE2-ODA-Chatbot` | OCM custom component used to add an ODA chatbot on a website built using OCM site builder |
 
 ## Contributing
 
-This project welcomes contributions from the community. Before submitting a pull
-request, please [review our contribution guide](../CONTRIBUTING.md).
+These projects welcome contributions from the community. Before submitting a pull
+request, please [review our contribution guide](./CONTRIBUTING.md).
 
 ## Security
 
-Please consult the [security guide](../SECURITY.md) for our responsible security
+Please consult the [security guide](./SECURITY.md) for our responsible security
 vulnerability disclosure process.
 
 ## License
 
-Copyright (c) 2021 Oracle and/or its affiliates.
+Copyright (c) 2021, 2022, Oracle and/or its affiliates.
 
 Released under the Universal Permissive License v1.0 as shown at
 <https://oss.oracle.com/licenses/upl/>.

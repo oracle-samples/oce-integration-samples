@@ -1,0 +1,62 @@
+{
+  "botPrompts" : [ {
+    "text" : "Choose topic"
+  } ],
+  "disambiguationPrompt" : "Please choose appropriate category",
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Home",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Home",
+    "synonyms" : null,
+    "trackingId" : "13A563C4-2FE6-47E2-A23E-3EEBFDA91D4A"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Cafe Supremo",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Cafe Supremo",
+    "synonyms" : [ "cafe" ],
+    "trackingId" : "DBE25F12-9850-48E6-B560-E980B6090710"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Coffee Machines",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Coffee Machines",
+    "synonyms" : [ "machine", "machines", "coffee machine" ],
+    "trackingId" : "FFA97BF2-4286-4906-A0A1-0E0B3947C011"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Learning",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Learning",
+    "synonyms" : [ "learn" ],
+    "trackingId" : "9E1A54D6-CBD6-4487-B571-17C8FC328F8F"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Selling",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Selling",
+    "synonyms" : [ "sell", "sales" ],
+    "trackingId" : "9D5980D6-F3D9-425B-A973-580E4487FC0C"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "FAQs",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "FAQs",
+    "synonyms" : [ "faq's", "frequently asked questions", "faq" ],
+    "trackingId" : "C8264E39-92F6-410B-829C-77704752F406"
+  } ],
+  "fuzzyMatch" : true,
+  "multiValue" : false,
+  "name" : "TopMenu",
+  "promptForDisambiguation" : true,
+  "trackingId" : "2663E80A-410D-4AD1-82A1-34D5DDBF910E",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

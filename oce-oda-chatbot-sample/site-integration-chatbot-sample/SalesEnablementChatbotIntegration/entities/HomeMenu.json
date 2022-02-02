@@ -1,0 +1,54 @@
+{
+  "botPrompts" : [ {
+    "text" : "Choose topic"
+  } ],
+  "disambiguationPrompt" : "Please choose appropriate category",
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Announcements",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Announcements",
+    "synonyms" : [ "announcement", "anouncement", "anouncements" ],
+    "trackingId" : "1CCBD9BC-7457-4DEE-8425-0D3EDADE750D"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Setup a Cafe",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Setup a Cafe",
+    "synonyms" : [ "set up a cafe", "set up cafe", "setting up a cafe" ],
+    "trackingId" : "39DF2432-E107-4955-A50C-E37A664C077E"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Funding Solutions",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Funding Solutions",
+    "synonyms" : [ "funding solution", "fuding solution" ],
+    "trackingId" : "98990055-DF85-42E5-934A-30DEECF2C44B"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Price a Combo",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "Price a Combo",
+    "synonyms" : [ "price combo", "pricing a combo", "pricing combos", "combo" ],
+    "trackingId" : "569E3208-E4F7-46C2-ADF0-89DD0B37EC8A"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "How To",
+    "extensionType" : null,
+    "nativeLanguageTag" : "en",
+    "primaryLanguageCanonicalName" : "How To",
+    "synonyms" : null,
+    "trackingId" : "3219BD5D-3212-4CFC-90A0-32C0569E3E66"
+  } ],
+  "fuzzyMatch" : true,
+  "multiValue" : false,
+  "name" : "HomeMenu",
+  "promptForDisambiguation" : true,
+  "trackingId" : "5B4D7D45-8D86-45D8-A9B4-7A0A2B940901",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

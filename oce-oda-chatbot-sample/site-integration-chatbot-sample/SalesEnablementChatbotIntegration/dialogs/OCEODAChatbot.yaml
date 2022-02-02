@@ -1,0 +1,355 @@
+# Copyright (c) 2021 Oracle and/or its affiliates. All rights reserved.
+# Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
+
+main: true
+name: "ODAChatbot"
+
+# this is the conversation flow for the cafe supremo chat bot skill
+# context variables
+
+context:
+  variables:
+    iResult: "nlpresult"
+    TopMenu: "TopMenu"
+    MenuBag: "MenuBag"
+    Choice: "string"
+    Response: "string"
+    accessToken: "string"
+    cardsRangeStart: "int"
+
+# the conversation flow starts here
+# the bot resolves the initial user input here
+
+states:
+
+  setCardsRangeStart:
+    component: "System.SetVariable"
+    properties:
+      variable: "cardsRangeStart"
+      value: 0
+    transitions:
+      next: "getUserIntent"
+
+  getUserIntent:
+    component: "System.Intent"
+    properties:
+      optionsPrompt: "${rb('prompt.intent')}"
+      translate: false
+      variable: "iResult"
+    transitions:
+      actions:
+        StoryIntent: "SetChoiceIfFound"
+        unresolvedIntent: "unresolved"
+
+# if the user input finds a match for either the sub-menu or a story category
+# the following states will set the appropriate variables to directly show the sub-menu or stories
+
+  InitialState:
+    component: "System.Output"
+    properties:
+      text: "${rb('default.message')}"
+      keepTurn: false
+    transitions:
+      next: "getUserIntent"
+
+  SetChoiceIfFound:
+    component: "System.SetVariable"
+    properties:
+      variable: "Choice"
+      value: "${iResult.value.entityMatches['StoryCategory'][0]}"
+    transitions:
+      next: "IsChoiceSet"
+
+  IsChoiceSet:
+    component: "System.ConditionExists"
+    properties:
+      variable: "Choice"
+    transitions:
+      actions:
+        exists: "ShowCards"
+        notexists: "MainMenu"
+
+  SetTopMenuIfFound:
+    component: "System.SetVariable"
+    properties:
+      variable: "TopMenu"
+      value: "${iResult.value.entityMatches['TopMenu'][0]}"
+    transitions:
+      next: "IsTopMenuSet"
+
+  IsTopMenuSet:
+    component: "System.ConditionExists"
+    properties:
+      variable: "TopMenu"
+    transitions:
+      actions:
+        exists: "MainMenuSwitch"
+        notexists: "MainMenu"
+        
+# if the bot does not find a match for sub-menu or story category in initial user query
+# it will show the user the main menu
+
+  MainMenu:
+    component: "System.CommonResponse"
+    properties:
+      processUserMessage: true
+      keepTurn: false
+      variable: "TopMenu"
+      nlpResultVariable: "iResult"     
+      maxPrompts: 2
+      metadata: 
+        responseItems:
+        - type: "text"
+          text: "${rb('prompt.invalidInput')}"
+          visible:
+            expression: "<#if system.invalidUserInput == 'true'>true<#else>false</#if>"
+        - type: "text"
+          text: "${rb('prompt.topMenu')}"
+          actions: 
+          - label: "${enumValue[0]?upper_case}${enumValue?keep_after(enumValue[0])}"
+            type: "postback"
+            keyword: "${enumValue[0]?upper_case},${(enumValue?index)+1},${enumValue}"
+            payload:
+              variables:
+                TopMenu: "${enumValue}"
+#            iteratorVariable: "TopMenu.type.enumValues"
+            iteratorVariable: "system.entityToResolve.value.enumValues"
+    transitions:
+      actions:
+        cancel: "unresolved"
+      next: "MainMenuSwitch"
+
+  MainMenuSwitch:
+    component: "System.Switch"
+    properties:
+      variable: "TopMenu"
+      source:
+      values:
+      - "Home"
+      - "Cafe Supremo"
+      - "Coffee Machines"
+      - "Learning"
+      - "Selling"
+      - "FAQs"
+    transitions:
+      actions:
+        Home: "ShowSubMenu"
+        Cafe Supremo: "ShowSubMenu"
+        Coffee Machines: "SetCoffeeMachineChoice"
+        Learning: "ShowSubMenu"
+        Selling: "ShowSubMenu"
+        FAQs: "SetFAQChoice"
+        NONE: "getUserIntent"
+
+# the MainMenu state asks the user for a input. The user can choose or write a query
+# the user input is resolved to match an entity, and the corresponding sub-menu will be shown to the user
+
+  ShowSubMenu:
+    component: "System.CommonResponse"
+    properties:
+      processUserMessage: true
+      keepTurn: false
+      variable: "MenuBag"
+      nlpResultVariable: "iResult"     
+      maxPrompts: 2
+      metadata: 
+        responseItems:
+        - type: "text"
+          text: "${rb('submenu.message', TopMenu.value)}"
+          visible:
+            expression: "<#if system.invalidUserInput != 'true'>true<#else>false</#if>"
+        - type: "text"
+          text: "${rb('prompt.invalidInput')}"
+          visible:
+            expression: "<#if system.invalidUserInput == 'true'>true<#else>false</#if>"
+        - type: "text"  
+          text: "${rb('prompt.submenu')}"
+          actions: 
+          - label: "${enumValue[0]?upper_case}${enumValue?keep_after(enumValue[0])}"
+            type: "postback"
+            keyword: "${enumValue[0]?upper_case},${(enumValue?index)+1}"
+            payload:  
+              variables: 
+                  Choice: "${enumValue}"
+            iteratorVariable: "system.entityToResolve.value.enumValues"
+    transitions:
+      actions:
+        cancel: "unresolved"
+      next: "SubSwitch"
+
+  SubSwitch:
+    component: "System.Switch"
+    properties:
+      variable: "TopMenu"
+      source:
+      values:
+      - "Home"
+      - "Cafe Supremo"
+      - "Learning"
+      - "Selling"
+    transitions:
+      actions:
+        Home: "SetHomeChoice"
+        Cafe Supremo: "SetCafeSupremoChoice"
+        Learning: "SetLearningChoice"
+        Selling: "SetSellingChoice"
+        NONE: "unresolved"
+
+# the subMenu state also asks the user for an input. The user can choose or write a query
+# the appropriate sub-menu entity is resolved and the choice variable is set
+
+  SetHomeChoice:
+    component: "System.SetVariable"
+    properties:
+      variable: "Choice"
+      value: "${MenuBag.value.HomeMenu}"
+    transitions:
+      next: "ShowCards"
+
+  SetCafeSupremoChoice:
+    component: "System.SetVariable"
+    properties:
+      variable: "Choice"
+      value: "${MenuBag.value.CafeSupremoMenu}"
+    transitions:
+      next: "ShowCards"
+
+  SetLearningChoice:
+    component: "System.SetVariable"
+    properties:
+      variable: "Choice"
+      value: "${MenuBag.value.LearningMenu}"
+    transitions:
+      next: "ShowCards"
+
+  SetSellingChoice:
+    component: "System.SetVariable"
+    properties:
+      variable: "Choice"
+      value: "${MenuBag.value.SellingMenu}"
+    transitions:
+      next: "ShowCards"
+
+  SetCoffeeMachineChoice:
+    component: "System.SetVariable"
+    properties:
+      variable: "Choice"
+      value: "Coffee Machines"
+    transitions:
+      next: "ShowCards"
+
+  SetFAQChoice:
+    component: "System.SetVariable"
+    properties:
+      variable: "Choice"
+      value: "FAQs"
+    transitions:
+      next: "ShowCards"
+
+# once the choice variable is set, the bot sends a request to the Oracle Content Management repository via custom component
+# the custom component then sends back the response to this skill 
+
+  ShowCards:
+    component: "System.Output"
+    properties:
+      text: "${rb('waitState.message', Choice.value)}"
+      keepTurn: true
+    transitions:
+      next: "retrieveStories"
+
+  retrieveStories:
+    component: "com.SalesEnablementCustomComponent"
+    properties:
+      variable: "Response"
+      itemCategory: "${Choice.value}"
+      accessToken: "${profile.accessToken}"
+    transitions:
+      actions:
+        success: "displayStories"
+        failure: "noStoriesFound"
+      next: "noStoriesFound"
+
+# if the request-response is successful, the bot will show the user a card response with stories for the chosen choice
+# this completes the conversation flow and the bot is reset
+# the bot can be reset in case of a failure in the custom component or unresolved intent
+
+  displayStories:
+    component: "System.CommonResponse"
+    properties:
+      processUserMessage: true
+      keepTurn: false
+      insightsEndConversation: true
+      metadata: 
+        responseItems:         
+        - type: "cards"
+          visible:
+            channels:
+              include: "websdk"
+          headerText: "<#if cardsRangeStart?number != 0>${rb('more.message', Choice.value)}</#if>"
+          cardLayout: "vertical"
+          actions:
+          - label: "${rb('label.showMore')}"
+            keyword: "more"
+            type: "postback"
+            skipAutoNumber: true
+            visible:
+              expression: "<#if cardsRangeStart?number+3 < Response.value?size>true<#else>false</#if>"
+            payload:
+              action: "more"
+              variables:
+                cardsRangeStart: "${cardsRangeStart?number+3}"
+          - label: "${rb('label.findSomethingElse')}"
+            keyword: "find, something else"
+            type: "postback"
+            skipAutoNumber: true
+            payload:
+              action: "FindMore"
+          cards:
+          - title: "${Response.HTML}"
+            iteratorVariable: "Response"
+            rangeStart: "${cardsRangeStart}"
+            rangeSize: 3
+    transitions:
+      next: "startNewQuery"
+      actions:
+        more: "displayStories"
+        FindMore: "doneState"
+  
+  startNewQuery:
+    component: "System.ResetVariables"
+    properties:
+      variableList: Choice, TopMenu, MenuBag, Response, cardsRangeStart
+    transitions:
+      next: "setCardsRangeStart"
+
+  doneState:
+    component: "System.Output"
+    properties:
+      text: "${rb('default.message')}"
+      keepTurn: false
+    transitions:
+      return: "done"
+
+  noStoriesFound:
+    component: "System.Output"
+    properties:
+      text: "${rb('noStoriesFound.message')}"
+      keepTurn: false
+    transitions:
+      return: "done"
+
+# state for unresolved intent
+
+  unresolved:
+    component: "System.CommonResponse"
+    properties:
+      processUserMessage: false
+      keepTurn: false
+      metadata: 
+        responseItems:
+        - type: "text"
+          text: "${rb('unresolved.message')}"
+        - type: "text"  
+          text: "${rb('default.message')}"
+    transitions:
+      return: "done"

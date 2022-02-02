@@ -1,0 +1,19 @@
+{
+  "botPrompts" : [ ],
+  "customSettings" : {
+    "date" : {
+      "version" : "1.0",
+      "ambiguousDateResolution" : "DEFAULT",
+      "defaultDateFormat" : "MONTH_DAY",
+      "userLocaleEnabled" : true
+    }
+  },
+  "entityGazetteers" : [ ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "DATE",
+  "promptForDisambiguation" : true,
+  "trackingId" : "C6A38E54-3BD2-43B5-B02E-D568556159FF",
+  "type" : "SYSTEM",
+  "validationRules" : [ ]
+}

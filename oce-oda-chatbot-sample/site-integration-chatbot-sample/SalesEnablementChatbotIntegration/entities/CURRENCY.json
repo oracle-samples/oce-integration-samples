@@ -1,0 +1,19 @@
+{
+  "botPrompts" : [ ],
+  "customSettings" : {
+    "currency" : {
+      "version" : "1.0",
+      "defaultDollarAmbiguity" : "USD",
+      "defaultYSignAmbiguity" : "JPY",
+      "userLocaleEnabled" : true
+    }
+  },
+  "entityGazetteers" : [ ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "CURRENCY",
+  "promptForDisambiguation" : true,
+  "trackingId" : "6D6B4E12-2D44-484F-B02F-C03D1259885F",
+  "type" : "SYSTEM",
+  "validationRules" : [ ]
+}
