@@ -1,0 +1,124 @@
+/**
+ * Copyright (c) 2021 Oracle and/or its affiliates. All rights reserved.
+ */
+
+.menucombo-default {
+    color: black;
+    font-weight: 400;
+    margin: 1.5vw;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menucombo-default .outer-wrapper {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+}
+
+.menucombo-default .image {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.menucombo-default .button-wrapper {
+    background: #bb0000;
+    font-weight: 600;
+    border-width: 0px;
+    padding-left: 2.5vw;
+    padding-right: 2vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    font-size: 1.157vw;
+    line-height: 1.2;
+    letter-spacing: 0.63px;
+    margin-left: -1vw;
+    margin-top: 1.3vw;
+    display: inline-block;
+
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+}
+
+.menucombo-default .button {
+    color: white;
+
+    -webkit-transform: skewX(15deg);
+    -moz-transform: skewX(15deg);
+    transform: skewX(15deg);
+}
+
+.menucombo-default .contentItem {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    min-height: 9vw;
+    border-width: 1px;
+    border-color: #d6dfe6;
+    border-style: solid;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.menucombo-default .description {
+    font-size: 1.508vw;
+    line-height: 1.1;
+    padding-top: 1.5vw;
+    text-align: left;
+}
+
+/* NOTE: The order of the media queries below should not be changed */
+
+@media (max-width: 1024px) {
+    .menucombo-default .button-wrapper {
+        font-size: 2vw;
+    }
+    .menucombo-default .contentItem {
+        min-height: 9.7vw;
+    }
+    .menucombo-default .description {
+        font-size: 2vw;
+        line-height: inherit;
+        padding-top: 1.5vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .menucombo-default .button-wrapper {
+        font-size: 4.5vw;
+    }
+    .menucombo-default .contentItem {
+        padding-top: 1%;
+        padding-left: 3%;
+        min-height: auto;
+    }
+    .menucombo-default .description {
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 1459px) {
+    .menucombo-default {
+        margin: 21.888px;
+    }
+    .menucombo-default .button-wrapper {
+        padding-left: 36.48px;
+        padding-right: 29.184px;
+        padding-top: 11.6736px;
+        padding-bottom: 11.6736px;
+        font-size: 16.8829px;
+        margin-left: -14.592px;
+        margin-top: 18.9696px;
+    }
+    .menucombo-default .contentItem {
+        min-height: 131.328px;
+    }
+    .menucombo-default .description {
+        font-size: 22.0047px;
+        line-height: 24.2052px;
+        padding-top: 21.888px;
+    }
+}

@@ -1,0 +1,18 @@
+<!--
+Copyright (c) 2021 Oracle and/or its affiliates. All rights reserved.
+-->
+
+{{#fields}}
+<a href="{{ad_commerceurl}}" target="{{target}}" class="ad-highlight-url">
+    <div class="ad-highlight">
+        <div class="contentItem {{ad_textposition}} {{ad_textcolor}}">
+            <div class="name">{{name}}</div>
+            <div class="description">{{description}}</div>
+            <!-- <button type="button">shop now</button> -->
+            <span>shop now</span>
+        </div>
+
+        <img class="image image-fill" src="{{ad_image_banner.url}}" alt="{{name}} Image" data-asset-operation="view:{{ad_image_banner.id}}">
+    </div>
+</a>
+{{/fields}}

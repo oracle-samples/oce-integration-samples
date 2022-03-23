@@ -1,0 +1,18 @@
+<!--
+Copyright (c) 2021 Oracle and/or its affiliates. All rights reserved.
+-->
+
+{{#fields}}
+<a href="{{scsData.detailPageLink}}" class="promo-detail-page-link">
+	<div class="promo-default">
+		<div class="contentItem {{promo_textposition}} {{promo_textcolor}}">
+			<div class="name">{{name}}</div>
+			<div class="description">{{description}}</div>
+			<!-- <button type="button">more</button> -->
+			<span>more</span>
+		</div>
+
+		<img class="image image-fill" id="{{id}}-image" src="{{promo_image_banner.url}}" alt="Image {{name}}" data-asset-operation="view:{{promo_image_banner.id}}">
+	</div>
+</a>
+{{/fields}}

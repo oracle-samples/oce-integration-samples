@@ -1,0 +1,106 @@
+/**
+ * Copyright (c) 2021 Oracle and/or its affiliates. All rights reserved.
+ */
+
+
+.blog-default-link {
+    display: block;
+}
+
+.blog-default {
+    color: black;
+    font-weight: 400;
+    margin: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-default .image {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.blog-default .button-wrapper {
+    background: #bb0000;
+    border-width: 0px;
+    padding-left: 3.6vw;
+    padding-right: 3.6vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    font-size: 1.5vw;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    position: absolute;
+    margin-left: -0.45vw;
+    margin-top: 1.3vw;
+    display: inline-block;
+
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+}
+
+.blog-default .button {
+    color: white;
+
+    -webkit-transform: skewX(15deg);
+    -moz-transform: skewX(15deg);
+    transform: skewX(15deg);
+}
+
+.blog-default .contentItem {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    min-height: 9vw;
+    border-width: 1px;
+    border-color: #d6dfe6;
+    border-style: solid;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.blog-default .name {
+    font-size: 1.8vw;
+    line-height: 1.1;
+    padding-top: 1.5vw;
+}
+
+.blog-default .date {
+    font-size: 1.2vw;
+    line-height: 1.1;
+    padding-top: 0.7vw;
+    color: #666666;
+}
+
+.blog-default-link:hover .contentItem .name,
+.blog-default-link:hover .contentItem .date,
+.blog-default-link:focus .contentItem .name,
+.blog-default-link:focus .contentItem .date {
+    text-decoration: underline;
+    text-decoration-color: #bd8842;
+}
+
+@media (min-width: 1200px) {
+    .blog-default .button-wrapper {
+        font-size: 20px;
+        padding: 10.67px 48px;
+    }
+}
+
+@media (max-width: 767px) {
+    .blog-default .button-wrapper {
+        font-size: 4vw;
+    }
+    .blog-default .contentItem {
+        padding-top: 1%;
+        padding-left: 3%;
+    }
+    .blog-default .name {
+        font-size: 5vw;
+    }
+    .blog-default .date {
+        font-size: 4vw;
+    }
+}

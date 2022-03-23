@@ -1,0 +1,18 @@
+<!--
+Copyright (c) 2021 Oracle and/or its affiliates. All rights reserved.
+-->
+
+{{#fields}}
+<a href="{{scsData.detailPageLink}}" class="blog-default-link">
+	<div class="blog-default">
+		<div class="button-wrapper">
+			<div class="button">{{blog_category}}</div>
+		</div>
+		<img class="image" src="{{blog_image_thumbnail.url}}" alt="{{name}} Image" data-asset-operation="view:{{blog_image_thumbnail.id}}">	
+		<div class="contentItem">
+			<div class="name">{{name}}</div>
+			<div class="date">{{updatedDate.formatted}}</div>
+		</div>
+	</div>
+</a>
+{{/fields}}

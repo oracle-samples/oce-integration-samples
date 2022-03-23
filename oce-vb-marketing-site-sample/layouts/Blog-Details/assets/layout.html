@@ -1,0 +1,21 @@
+<!--
+Copyright (c) 2021 Oracle and/or its affiliates. All rights reserved.
+-->
+
+{{#fields}}
+<div class="blog-details">
+	<div class="document-wrapper">
+		<div class="document">
+			<div class="button-wrapper">
+				<div class="button">{{blog_category}}</div>
+			</div>
+			<div class="contentItem">
+				<div class="date">{{updatedDate.formatted}}</div>
+				<div class="name">{{name}}</div>
+				<div class="description">{{description}}</div>
+				<div class="content">{{&blog_content}}</div>
+			</div>
+		</div>	
+	</div>
+</div>
+{{/fields}}

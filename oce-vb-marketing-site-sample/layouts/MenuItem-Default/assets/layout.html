@@ -1,0 +1,28 @@
+<!--
+Copyright (c) 2021 Oracle and/or its affiliates. All rights reserved.
+-->
+
+{{#fields}}
+<div class="menuitem-default">
+    <div class="content-wrapper">
+        <div class="button-wrapper">
+            <div class="button">{{name}}</div>
+        </div>
+        <div class="description">{{description}}</div>
+    </div>
+    <div class="media-wrapper">
+        {{#menuitem_youtube}}
+        <!-- If the Video URL exist then include it -->
+        <div class="video">
+            <iframe src="{{menuitem_youtube}}?showinfo=0&rel=0" title="{{name}} Video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <!-- This will hide the YouTube Logo but will not work if you also try to hide the info (know YouTube constraint) so you can have one hidden or the other... but not both -->
+            <!--iframe src="{{menuitem_youtube}}?modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe-->
+        </div>
+        {{/menuitem_youtube}}
+        {{^menuitem_youtube}}
+        <!-- Else if the Video URL does not exist then include the image instead -->
+        <img class="image" src="{{menuitem_image.url}}" alt="{{name}} Image" data-asset-operation="view:{{menuitem_image.id}}">
+        {{/menuitem_youtube}}
+    </div>
+</div>
+{{/fields}}

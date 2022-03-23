@@ -1,0 +1,18 @@
+<!--
+Copyright (c) 2021 Oracle and/or its affiliates. All rights reserved.
+-->
+
+{{#fields}}
+<div class="menucombo-default">
+	<div class="outer-wrapper">
+		<div class="button-wrapper">
+			<div class="button">{{name}}</div>
+		</div>
+	</div>
+
+	<img class="image" src="{{menucombo_image.url}}" alt="{{name}}" data-asset-operation="view:{{menucombo_image.id}}">
+	<div class="contentItem" id="{{id}}-contentItem">
+		<div class="description">{{description}}</div>
+	</div>
+</div>
+{{/fields}}

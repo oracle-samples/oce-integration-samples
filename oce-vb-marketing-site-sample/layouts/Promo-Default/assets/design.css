@@ -1,0 +1,110 @@
+/**
+ * Copyright (c) 2021 Oracle and/or its affiliates. All rights reserved.
+ */
+
+.promo-detail-page-link {
+    display: block;
+}
+
+.promo-default .contentItem {
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    padding-top: 7.3vw;
+    padding-left: 3vw;
+    padding-right: 60vw;
+    letter-spacing: 1px;
+}
+
+.promo-default .contentItem.Center {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    text-align: center;
+}
+
+.promo-default .contentItem.Right {
+    padding-left: 50vw;
+    padding-right: 3vw;
+    text-align: center;
+}
+
+.promo-default .contentItem.Dark {
+    color: black;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+}
+
+.promo-default .name {
+    font-size: 3.6vw;
+    font-weight: 600;
+    line-height: 1.1;
+}
+.promo-default .description {
+    margin-top: 1.2vw;
+    font-size: 2.2vw;
+}
+
+.promo-default span {
+    background: #bb0000;
+    border-width: 0;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 0.6vw;
+    padding-bottom: 0.9vw;
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 1.2;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    margin-top: 4vw;
+    display: inline-block;
+}
+
+.promo-default .contentItem.Dark .name,
+.promo-default .contentItem.Dark .description {
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4), 1px 0 0 #fff,
+        -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px 0 #fff,
+        -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.promo-default .contentItem.Light .name,
+.promo-default .contentItem.Light .description {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4), 1px 0 0 #000, -1px 0 0 #000,
+        0 1px 0 #000, 0 -1px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000,
+        1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+@media (max-width: 767px) {
+    .promo-default .contentItem {
+        padding-right: 20vw;
+    }
+
+    .promo-default .contentItem.Center {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .promo-default .contentItem.Right {
+        text-align: right;
+        padding-left: 20vw;
+    }
+
+    .promo-default .name {
+        font-size: 27.612px;
+    }
+
+    .promo-default .description {
+        display: none;
+    }
+
+    .promo-default span {
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-top: 4.602px;
+        padding-bottom: 6.903px;
+        font-size: 15.34px;
+    }
+}
+
+a.promo-detail-page-link:focus {
+    outline-offset: -4px;
+}

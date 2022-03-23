@@ -1,0 +1,23 @@
+<!--
+Copyright (c) 2021 Oracle and/or its affiliates. All rights reserved.
+-->
+
+{{#fields}}
+<a href="{{scsData.detailPageLink}}" class="blog-highlight-detail-link">
+	<div class="blog-highlight">
+		<div class="contentItemWrapper">
+			<!-- <button type="button">{{blog_category}}</button> -->
+			<span class="blog-category">{{blog_category}}</span>
+			<div class="contentItem">
+				<div class="titleWrapper">
+					<span class="title">{{type}} / </span>
+					<span class="date">{{updatedDate.formatted}}</span>
+				</div>
+				<div class="name">{{name}}</div>
+				<div class="description">{{description}}</div>
+			</div>
+		</div>
+		<img class="image" src="{{blog_image_ad.url}}" alt="{{name}} Image" data-asset-operation="view:{{blog_image_ad.id}}">
+	</div>
+</a>
+{{/fields}}

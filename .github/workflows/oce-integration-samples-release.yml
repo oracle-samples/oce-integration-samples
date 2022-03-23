@@ -22,6 +22,19 @@ jobs:
       - name: Build Image Gallery
         run: |
           cd oce-vb-image-gallery-sample/gallerysample && zip  -r ../oce-vb-image-gallery-sample.zip *
+      - name: Build Content Layout Pack
+        run: |
+          mkdir -p oce-vb-marketing-site-sample/VB_MarketingSite_Layouts
+          cd oce-vb-marketing-site-sample/layouts
+          ls -al
+          for layout in *-*
+          do
+            zip -r ../VB_MarketingSite_Layouts/$layout.zip $layout
+          done
+          cd ..
+          ls -alR VB_MarketingSite_Layouts
+          zip -r VB_MarketingSite_Layouts.zip VB_MarketingSite_Layouts
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -41,6 +54,16 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./oce-vb-marketing-site-sample/oce-vb-marketing-sites-sample.zip
           asset_name: oce-vb-marketing-sites-sample.zip
+          asset_content_type: application/zip
+      - name: Upload Layouts Pack
+        id: upload-oce-vb-marketing-site-layouts
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./oce-vb-marketing-site-sample/VB_MarketingSite_Layouts.zip
+          asset_name: VB_MarketingSite_Layouts.zip
           asset_content_type: application/zip
       - name: Upload Release Asset
         id: upload-oce-vb-image-gallery-sample

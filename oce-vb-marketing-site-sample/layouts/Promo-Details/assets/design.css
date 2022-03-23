@@ -1,0 +1,109 @@
+/**
+ * Copyright (c) 2021 Oracle and/or its affiliates. All rights reserved.
+ */
+
+.promo-details {
+    letter-spacing: 1px;
+}
+
+.promo-details .image {
+    width: 100%;
+}
+
+.promo-details .border {
+    padding-left: 3.43vw;
+    padding-right: 3.43vw;
+    max-width: 1300px;
+    margin: auto;
+    border: 1px solid #dee2e6;
+}
+
+.promo-details .document {
+    margin: 20px auto;
+    background: #fbfbfb;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.promo-details .contentItem {
+    color: black;
+    padding-left: 3.43vw;
+    padding-right: 3.43vw;
+    padding-bottom: 20px;
+}
+
+.promo-details .date {
+    font-size: 2.3vw;
+    font-weight: 400;
+    line-height: 1.1;
+    padding-top: 10px;
+}
+
+.promo-details .name {
+    font-size: 4.7vw;
+    font-weight: 400;
+    line-height: 1.1;
+    padding-top: 1.5vw;
+}
+
+.promo-details .description {
+    font-size: 2.3vw;
+    padding-top: 1.1vw;
+}
+
+.promo-details .content {
+    font-size: 1.4vw;
+    padding-top: 3vw;
+    font-weight: 400;
+}
+
+@media (min-width: 1315px) {
+    .promo-details .border {
+        padding-left: 45.1045px;
+        padding-right: 45.1045px;
+    }
+
+    .promo-details .contentItem {
+        padding-left: 45.1045px;
+        padding-right: 45.1045px;
+        padding-bottom: 18.0155px;
+    }
+
+    .promo-details .date {
+        font-size: 30.245px;
+    }
+
+    .promo-details .name {
+        font-size: 61.805px;
+        padding-top: 19.725px;
+    }
+
+    .promo-details .description {
+        font-size: 30.245px;
+        padding-top: 14.465px;
+    }
+
+    .promo-details .content {
+        font-size: 18.41px;
+        padding-top: 39.45px;
+    }
+}
+
+@media (max-width: 900px) {
+    .promo-details .date {
+        font-size: 20.7px;
+    }
+
+    .promo-details .name {
+        font-size: 42.3px;
+    }
+
+    .promo-details .description {
+        font-size: 20.7px;
+    }
+
+    .promo-details .content {
+        font-size: 12.6px;
+    }
+}

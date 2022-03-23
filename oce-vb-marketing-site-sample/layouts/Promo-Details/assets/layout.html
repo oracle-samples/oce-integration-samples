@@ -1,0 +1,19 @@
+<!--
+Copyright (c) 2021 Oracle and/or its affiliates. All rights reserved.
+-->
+
+{{#fields}}
+<div class="promo-details">
+	<img class="image" src="{{promo_image_banner.url}}" alt="Image {{name}}" data-asset-operation="view:{{promo_image_banner.id}}">	
+	<div class="border">
+		<div class="document">
+			<div class="contentItem">
+				<div class="date">{{updatedDate.formatted}}</div>
+				<div class="name">{{name}}</div>
+				<div class="description">{{description}}</div>
+				<div class="content">{{&promo_content}}</div>
+			</div>
+		</div>	
+	</div>
+</div>
+{{/fields}}
