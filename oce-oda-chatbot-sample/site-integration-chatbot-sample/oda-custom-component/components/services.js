@@ -55,9 +55,11 @@ function retrieveMediaURL(client, identifier) {
       const object = asset.fields.renditions.filter((item) => item.name === 'Small')[0];
       const format = object.formats.filter((item) => item.format === 'jpg')[0];
       const self = format.links.filter((item) => item.rel === 'self')[0];
-      url = self.href;
+      var tempURL = new URL(self.href);
+      url = tempURL.href.replace(tempURL.origin, "");
     } else {
-      url = asset.fields.native.links[0].href;
+      var tempURL = new URL(asset.fields.native.links[0].href);
+      url = tempURL.href.replace(tempURL.origin, "");
     }
     return [url, asset.fields.fileType];
   });
